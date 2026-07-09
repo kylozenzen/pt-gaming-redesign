@@ -82,17 +82,51 @@
   .title .twist{color:var(--pink);text-shadow:0 0 8px rgba(255,61,154,.7),0 0 26px rgba(255,61,154,.5),0 4px 0 #5c1338}
   .edition{font-family:var(--disp);font-size:clamp(9px,2.8vw,13px);letter-spacing:.22em;color:var(--gold);margin-top:18px}
   .hiscore{font-family:var(--disp);font-size:10px;letter-spacing:.14em;color:var(--pink);margin-top:14px;opacity:.9}
-  .hs-title{font-family:var(--disp);font-size:12px;color:var(--gold);text-align:center;letter-spacing:.14em;text-transform:uppercase;margin:24px 0 10px;text-shadow:0 0 10px rgba(255,180,61,.5)}
-  .hs-board{max-width:320px;margin:0 auto;border:2px solid var(--edge-lit);border-radius:12px;background:linear-gradient(180deg,var(--panel-2),var(--panel));padding:14px 18px}
-  .hs-row{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;font-family:var(--disp);font-size:12px;padding:6px 0;color:var(--cyan)}
-  .hs-row .rk{color:var(--gold)}
-  .hs-row .nm{letter-spacing:.12em}
-  .hs-row .sc{color:var(--pink);text-align:right}
-  .hs-row.you{color:#fff;text-shadow:0 0 8px rgba(255,255,255,.5)}
-  .hs-entry-h{font-family:var(--disp);font-size:14px;color:var(--gold);text-align:center;text-shadow:0 0 12px rgba(255,180,61,.6);margin:18px 0 8px;animation:blink 1s steps(2) infinite}
+  .hs-entry-h{font-family:var(--disp);font-size:14px;color:var(--gold);text-align:center;text-shadow:0 0 12px rgba(255,180,61,.6);margin:18px 0 8px}
   .hs-entry-sub{font-family:var(--read);font-size:20px;color:#c9b6ee;text-align:center;margin-bottom:12px}
-  .initials-in{display:block;margin:0 auto;width:200px;background:#0d0715;border:3px solid var(--gold);border-radius:10px;color:var(--cyan);font-family:var(--disp);font-size:32px;letter-spacing:.3em;text-align:center;text-transform:uppercase;padding:14px 10px}
+  .initials-in{display:block;margin:0 auto;width:210px;background:#0d0715;border:3px solid var(--gold);border-radius:10px;color:var(--cyan);font-family:var(--disp);font-size:34px;letter-spacing:.34em;text-align:center;text-transform:uppercase;padding:14px 10px 14px 22px}
   .initials-in:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 16px rgba(47,243,255,.5)}
+
+  /* lives */
+  .lives{display:flex;gap:8px;justify-content:center;margin:-2px 0 10px;font-size:20px;line-height:1}
+  .life{color:var(--red);text-shadow:0 0 8px rgba(255,77,94,.6);transition:transform .2s,opacity .2s}
+  .life.gone{color:#3a2150;text-shadow:none;opacity:.7}
+  .life.lost{animation:lifeLost .5s ease}
+  @keyframes lifeLost{0%{transform:scale(1.6);color:#fff}100%{transform:scale(1)}}
+
+  /* boss subtitle */
+  .subtitle.boss-warn{color:var(--red);text-shadow:0 0 10px rgba(255,77,94,.5)}
+  .subtitle.boss-warn .lbl{color:var(--red)}
+
+  /* victory */
+  #victory .vic{text-align:center;position:relative}
+  .vic-banner{font-family:var(--disp);font-size:clamp(14px,4.4vw,20px);color:var(--cyan);letter-spacing:.14em;text-shadow:0 0 16px rgba(47,243,255,.5);margin-bottom:14px;animation:vicIn .5s ease both}
+  .vic-rank{font-family:var(--disp);font-size:clamp(70px,20vw,120px);line-height:1;color:var(--gold);text-shadow:0 0 30px rgba(255,180,61,.6),0 6px 0 #6d4f1a;animation:stampIn .55s cubic-bezier(.2,1.5,.35,1) both}
+  .vic-rank.rank-s{color:#ffe07a;text-shadow:0 0 34px rgba(255,224,122,.75),0 6px 0 #7a5a12}
+  .vic-rank.rank-f{color:var(--red);text-shadow:0 0 30px rgba(255,77,94,.6),0 6px 0 #5c1320}
+  .vic-crit{font-family:var(--disp);font-size:clamp(12px,3.4vw,16px);color:var(--pink);margin-top:10px;animation:vicIn .5s .15s ease both}
+  .vic-score{font-family:var(--disp);font-size:clamp(14px,4vw,20px);color:var(--cyan);margin-top:20px}
+  .vic-pips{margin-top:16px}
+  @keyframes stampIn{0%{opacity:0;transform:scale(2.6) rotate(-8deg);filter:blur(6px)}60%{opacity:1}100%{opacity:1;transform:scale(1) rotate(0);filter:blur(0)}}
+  @keyframes vicIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+  /* card preview */
+  .card-preview{display:block;width:100%;max-width:340px;margin:0 auto 16px;border-radius:12px;box-shadow:0 14px 40px rgba(0,0,0,.6),0 0 30px rgba(47,243,255,.18)}
+  .receipt-cta{display:flex;flex-direction:column;gap:10px;max-width:340px;margin:0 auto}
+  .receipt-cta .row{display:flex;gap:10px}
+  .receipt-cta .row .btn{flex:1;font-size:12px;padding:14px 8px}
+
+  /* game over */
+  #gameover .go{text-align:center;border:3px solid var(--red);border-radius:16px;background:linear-gradient(180deg,#1c0a12,#12070c);padding:34px 24px;box-shadow:0 0 0 5px var(--void-2),0 0 46px rgba(255,77,94,.25)}
+  .go-title{font-family:var(--disp);font-size:clamp(30px,9vw,52px);color:var(--red);text-shadow:0 0 24px rgba(255,77,94,.6),0 5px 0 #4a0d16;letter-spacing:.04em;animation:stampIn .5s cubic-bezier(.2,1.5,.35,1) both}
+  .go-sub{font-family:var(--read);font-size:22px;color:#ffb0bc;margin-top:16px}
+  .go-stats{font-family:var(--disp);font-size:12px;line-height:2;color:#c9b6ee;margin-top:16px}
+
+  /* celebratory flash + fatality sub */
+  #flash{position:fixed;inset:0;z-index:44;pointer-events:none;background:#fff;opacity:0}
+  #flash.go{animation:flashPop .5s ease}
+  @keyframes flashPop{0%{opacity:.55}100%{opacity:0}}
+  .fatal-sub{position:absolute;left:0;right:0;bottom:30%;text-align:center;font-family:var(--disp);font-size:14px;letter-spacing:.3em;color:#ff9aa6;text-transform:uppercase}
   .attract::before,.attract::after{content:"";position:absolute;top:0;bottom:0;width:2px;background:linear-gradient(180deg,transparent,var(--cyan),transparent);opacity:.25}
   .attract::before{left:6px}
   .attract::after{right:6px}
@@ -337,8 +371,6 @@
       <button class="btn btn-ghost" id="moreBtn" onclick="showScreen('more')" style="display:none">More Modes</button>
       <button class="btn btn-ghost" onclick="showScreen('settings')">Settings</button>
     </div>
-    <div class="hs-title">High Scores</div>
-    <div class="hs-board" id="hsBoard"></div>
     <div class="foot" id="lobbyFoot">© 2026 Nobody Creative &middot; Insert Coin</div>
   </section>
 
@@ -427,6 +459,7 @@
         <button class="quit" onclick="quitGame()" aria-label="Exit to title">✕ EXIT</button>
       </div>
     </div>
+    <div class="lives" id="hudLives" aria-label="Lives remaining"></div>
     <div class="pips" id="pips" aria-hidden="true"></div>
     <div class="auditorium">
       <div class="movie-screen" id="movieScreen"><div class="clue" id="clue">—</div></div>
@@ -444,18 +477,42 @@
     </div>
   </section>
 
-  <section class="screen" id="receipt">
-    <div class="ticket" id="ticket"></div>
-    <div id="hsEntry" style="display:none">
-      <div class="hs-entry-h">★ NEW HIGH SCORE ★</div>
-      <div class="hs-entry-sub">Enter your initials</div>
-      <input id="initials" class="initials-in" maxlength="3" placeholder="AAA" autocomplete="off" autocapitalize="characters" />
-      <button class="btn btn-gold" id="saveHsBtn" onclick="saveHs()" style="width:100%;max-width:320px;margin:12px auto 0;display:block">Save Score</button>
+  <section class="screen" id="victory">
+    <div class="vic">
+      <div class="vic-banner" id="vicBanner">RUN COMPLETE</div>
+      <div class="vic-rank" id="vicRank">S</div>
+      <div class="vic-crit" id="vicCrit">Perfect Run</div>
+      <div class="vic-score">SCORE&nbsp; <span id="vicScore">0</span></div>
+      <div class="pips vic-pips" id="vicPips"></div>
+      <div class="hs-entry-h" style="margin-top:22px">◆ ENTER YOUR INITIALS ◆</div>
+      <div class="hs-entry-sub">They go on your score card</div>
+      <input id="initials" class="initials-in" maxlength="3" placeholder="AAA" autocomplete="off" autocapitalize="characters" oninput="onInitials()" />
+      <button class="btn btn-primary" onclick="showResults()" style="margin:20px auto 0;display:block;min-width:240px">See Score Card ▶</button>
     </div>
+  </section>
+
+  <section class="screen" id="receipt">
+    <img id="cardPreview" class="card-preview" alt="Your Plot Twisted score card" />
     <div class="receipt-cta">
-      <button class="btn btn-primary" onclick="shareScoreCard()">Share Score Card</button>
+      <div class="row">
+        <button class="btn btn-primary" onclick="saveCard()">💾 Save</button>
+        <button class="btn btn-gold" onclick="shareCard()">Share ↗</button>
+      </div>
+      <button class="btn btn-ghost" onclick="copyResult()">📋 Copy Result</button>
       <div class="row">
         <button class="btn btn-ghost" onclick="replay()">Play Again</button>
+        <button class="btn btn-ghost" onclick="goLobby()">Title</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="gameover">
+    <div class="go">
+      <div class="go-title">GAME OVER</div>
+      <div class="go-sub" id="goSub">You ran out of lives.</div>
+      <div class="go-stats" id="goStats"></div>
+      <div class="menu" style="margin-top:24px">
+        <button class="btn btn-primary" onclick="replay()">Retry ▶</button>
         <button class="btn btn-ghost" onclick="goLobby()">Title</button>
       </div>
     </div>
@@ -483,6 +540,7 @@
 </div>
 
 <div class="egg-layer" id="eggLayer"></div>
+<div id="flash" aria-hidden="true"></div>
 <div class="toast" id="toast"></div>
 
 <script>
@@ -507,15 +565,17 @@ const SETTINGS = { layout:'qwerty', sound:true };
 const LAYOUTS = { qwerty:["QWERTYUIOP","ASDFGHJKL","ZXCVBNM"], abc:["ABCDEFGHI","JKLMNOPQR","STUVWXYZ"] };
 const LS={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v);}catch(_){return d;}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(_){}}};
 Object.assign(SETTINGS, LS.get('ptg_settings',{}));
-const DEFAULT_HS = [{name:'BEN',score:900},{name:'CPU',score:650},{name:'MOM',score:400},{name:'PT1',score:250},{name:'AAA',score:100}];
-let HS = LS.get('ptg_hs', DEFAULT_HS.slice());
+let playerInitials = LS.get('ptg_initials','AAA');
 function saveSettings(){ LS.set('ptg_settings', SETTINGS); }
 function toggleLayout(){ SETTINGS.layout = SETTINGS.layout==='qwerty'?'abc':'qwerty'; saveSettings(); document.getElementById('setLayout').textContent = SETTINGS.layout==='qwerty'?'QWERTY':'A\u2013Z'; }
 function toggleSound(){ SETTINGS.sound=!SETTINGS.sound; saveSettings(); const b=document.getElementById('setSound'); b.textContent=SETTINGS.sound?'ON':'OFF'; b.classList.toggle('off',!SETTINGS.sound); }
 
 /* ============ STATE ============ */
 const ROUND_SIZE = 5;
-const S = { catKey:null, catName:"", qs:[], i:0, score:0, correct:0, combo:0, maxCombo:0, typed:"", hintUsed:false, locked:false, results:[], eggBusy:false, boss:false };
+const LIVES_START = 3;
+const GUESSES_PER = 3;
+const SITE_URL = (location.protocol.indexOf('http')===0) ? (location.origin + location.pathname).replace(/index\.html$/,'') : 'plot-twisted.netlify.app';
+const S = { catKey:null, catName:"", qs:[], i:0, score:0, correct:0, combo:0, maxCombo:0, lives:LIVES_START, guesses:GUESSES_PER, typed:"", hintUsed:false, locked:false, results:[], eggBusy:false, boss:false };
 
 /* ============ HELPERS ============ */
 function esc(s){ return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
@@ -536,7 +596,7 @@ function applySettingsUI(){ const a=document.getElementById('setLayout'); if(a)a
 
 /* ============ NAV ============ */
 function showScreen(id){ document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active')); document.getElementById(id).classList.add('active'); window.scrollTo(0,0); }
-function goLobby(){ renderHsBoard(); showScreen('lobby'); }
+function goLobby(){ showScreen('lobby'); }
 function quitGame(){ document.getElementById('exitOverlay').classList.add('show'); }
 function closeExit(){ document.getElementById('exitOverlay').classList.remove('show'); }
 function leaveTheater(){ closeExit(); if('speechSynthesis' in window) speechSynthesis.cancel(); goLobby(); }
@@ -551,17 +611,7 @@ async function loadClues(){
   }catch(_){ /* keep inlined fallback */ }
 }
 function escHs(s){ return String(s).replace(/[^A-Za-z0-9]/g,'').toUpperCase().slice(0,3)||'AAA'; }
-function hsSorted(){ return HS.slice().sort((a,b)=>b.score-a.score); }
-function hsQualifies(pts){ if(pts<=0) return false; const t=hsSorted(); return t.length<5 || pts>t[t.length-1].score; }
-function hsCommit(name,pts){ HS.push({name:escHs(name),score:pts}); HS=hsSorted().slice(0,10); LS.set('ptg_hs',HS); }
-function renderHsBoard(youName){
-  const el=document.getElementById('hsBoard'); if(!el) return;
-  const top=hsSorted().slice(0,5); let flagged=false;
-  el.innerHTML=top.map((h,i)=>{
-    const you = (!flagged && youName && escHs(h.name)===escHs(youName)); if(you) flagged=true;
-    return `<div class="hs-row${you?' you':''}"><span class="rk">${i+1}.</span><span class="nm">${escHs(h.name)}</span><span class="sc">${String(h.score).padStart(6,'0')}</span></div>`;
-  }).join('');
-}
+function onInitials(){ playerInitials=escHs(document.getElementById('initials').value); LS.set('ptg_initials',playerInitials); }
 function dealFive(){
   let bag=LS.get('ptg_bag',null), cur=LS.get('ptg_bagcur',0);
   if(!Array.isArray(bag) || bag.length!==ALL.length || cur+ROUND_SIZE>bag.length){ bag=shuffle(ALL.map((_,i)=>i)); cur=0; }
@@ -577,29 +627,47 @@ function startArcade(){
   sfxCoin();
   S.catKey='arcade'; S.catName='Arcade';
   S.qs = dealFive();
-  S.i=0; S.score=0; S.correct=0; S.combo=0; S.maxCombo=0; S.results=new Array(S.qs.length).fill(null);
+  S.i=0; S.score=0; S.correct=0; S.combo=0; S.maxCombo=0; S.lives=LIVES_START; S.results=new Array(S.qs.length).fill(null);
   document.getElementById('hudTotal').textContent=S.qs.length;
-  buildSeats(); buildPips(); showScreen('theater'); loadQuestion();
+  buildSeats(); buildPips(); renderLives(); showScreen('theater'); loadQuestion();
 }
+function renderLives(){
+  const el=document.getElementById('hudLives'); if(!el) return;
+  let h='';
+  for(let i=0;i<LIVES_START;i++){ h+=`<span class="life${i<S.lives?'':' gone'}">${i<S.lives?'\u2665':'\u2661'}</span>`; }
+  el.innerHTML=h;
+}
+function loseLifeAnim(){
+  const el=document.getElementById('hudLives'); if(!el) return;
+  const hearts=el.querySelectorAll('.life'); const idx=S.lives;
+  if(hearts[idx]){ hearts[idx].classList.add('lost'); }
+}
+function sfxVictory(){ [523,659,784,1047].forEach((f,i)=>setTimeout(()=>tone(f,0.14,'square',0.06), i*110)); }
+function sfxGameOver(){ [392,330,262,196].forEach((f,i)=>setTimeout(()=>tone(f,0.22,'sawtooth',0.06), i*160)); }
+function flashScreen(){ const f=document.getElementById('flash'); if(!f)return; if(matchMedia('(prefers-reduced-motion:reduce)').matches)return; f.classList.remove('go'); void f.offsetWidth; f.classList.add('go'); }
 function loadQuestion(){
   const q=S.qs[S.i];
-  S.typed=""; S.hintUsed=false; S.locked=false;
+  S.typed=""; S.hintUsed=false; S.locked=false; S.guesses=GUESSES_PER;
   S.boss = (S.i===S.qs.length-1);
   const ms=document.getElementById('movieScreen'); ms.classList.remove('correct');
   ms.classList.toggle('boss',S.boss);
   ms.innerHTML='<div class="cart-lbl">'+esc(q.platform||'')+'</div><div class="clue" id="clue"></div>';
   document.getElementById('clue').textContent=q.clue;
-  document.getElementById('subtitle').innerHTML=""; document.getElementById('subtitle').classList.remove('wrong');
+  document.getElementById('subtitle').innerHTML=""; document.getElementById('subtitle').classList.remove('wrong','boss-warn');
   document.getElementById('hintBtn').disabled=false;
   const now=document.getElementById('hudCat');
   now.classList.remove('boss','combo');
-  if(S.boss){ now.textContent='\u2620 FATALITY'; now.classList.add('boss'); }
+  if(S.boss){
+    now.textContent='\u2620 BOSS'; now.classList.add('boss');
+    const sub=document.getElementById('subtitle'); sub.classList.add('boss-warn');
+    sub.innerHTML='<span class="lbl">\u26a0 BOSS</span>Final stage \u2014 clear it for double points!';
+  }
   else if(S.combo>=2){ now.textContent='COMBO x'+S.combo; now.classList.add('combo'); }
   else { now.textContent='PLOT TWISTED'; }
   document.getElementById('hudQ').textContent=S.i+1;
   document.getElementById('hudScore').textContent=S.score;
   if(S.boss) sfxBoss();
-  renderPips(); renderTyped();
+  renderLives(); renderPips(); renderTyped();
 }
 
 /* ============ CONTROLS (seat keyboard) ============ */
@@ -670,29 +738,48 @@ function win(q){
   S.combo++; S.maxCombo=Math.max(S.maxCombo,S.combo);
   const base=S.hintUsed?50:100;
   const cbonus=S.combo>=2?(S.combo-1)*25:0;
-  const gained=base+cbonus;
+  let gained=base+cbonus;
+  if(S.boss) gained*=2;
   S.score+=gained; S.correct++; S.results[S.i]=true; renderPips();
   buzz(20);
   const ms=document.getElementById('movieScreen'); ms.classList.add('correct');
-  const sub=document.getElementById('subtitle'); sub.classList.remove('wrong');
+  const sub=document.getElementById('subtitle'); sub.classList.remove('wrong','boss-warn');
   const comboTxt = S.combo>=2 ? ` <span style="color:var(--gold)">COMBO x${S.combo}!</span>` : '';
   sub.innerHTML=`<span class="lbl">+${gained}</span>${esc(titleCase(q.answer))}${comboTxt}`;
   document.getElementById('hudScore').textContent=S.score;
-  if(S.combo>=2){ comboFlash(S.combo); comboSfx(S.combo); } else { sfxCorrect(); }
 
   if(S.boss){
-    ms.innerHTML='<div class="verdict boss">FATALITY!</div>';
-    setTimeout(fatalityFinish,750);
+    ms.classList.remove('boss');
+    ms.innerHTML='<div class="verdict boss">VICTORY!</div>';
+    sfxVictory(); flashScreen();
+    setTimeout(next,1500);
   } else {
+    if(S.combo>=2){ comboFlash(S.combo); comboSfx(S.combo); } else { sfxCorrect(); }
     ms.innerHTML='<div class="verdict">STAGE CLEAR!</div>';
     setTimeout(next,1200);
   }
 }
-function fatalityFinish(){ S.eggBusy=true; fatalOverlay(2400,()=>{ S.eggBusy=false; next(); }); }
-function wrong(){ sfxWrong(); buzz([0,30,40,30]); S.combo=0;
+function wrong(){
+  S.guesses--; S.combo=0;
   const line=document.getElementById('answerLine'); line.classList.add('shake'); setTimeout(()=>line.classList.remove('shake'),350);
-  const sub=document.getElementById('subtitle'); sub.classList.add('wrong'); sub.innerHTML=`<span class="lbl">MISS!</span>Not it. Try again.`;
+  if(S.guesses<=0){ failClue('out'); return; }
+  sfxWrong(); buzz([0,30,40,30]);
+  const sub=document.getElementById('subtitle'); sub.classList.remove('boss-warn'); sub.classList.add('wrong');
+  sub.innerHTML=`<span class="lbl">MISS!</span>${S.guesses===1?'Last try!':S.guesses+' tries left'}`;
   S.typed=""; renderTyped();
+}
+function failClue(reason){
+  S.locked=true; S.lives--; S.combo=0; S.results[S.i]=false;
+  loseLifeAnim(); renderPips();
+  sfxWrong(); buzz([0,60,40,80]);
+  const q=S.qs[S.i];
+  const sub=document.getElementById('subtitle'); sub.classList.remove('boss-warn'); sub.classList.add('wrong');
+  const lead = reason==='skip' ? 'SKIPPED' : 'OUT OF TRIES';
+  sub.innerHTML=`<span class="lbl">${lead}</span>it was ${esc(titleCase(q.answer))}`;
+  const ms=document.getElementById('movieScreen'); ms.classList.remove('boss');
+  setTimeout(renderLives, 500);
+  if(S.lives<=0){ setTimeout(gameOverFailed,1700); }
+  else { setTimeout(next,1700); }
 }
 
 /* ============ EASTER EGGS ============ */
@@ -717,7 +804,7 @@ function eggMatrix(){ if(S.eggBusy) return; S.eggBusy=true; S.locked=true;
 function fatalOverlay(dur, done){
   const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
   const layer=document.getElementById('eggLayer');
-  layer.innerHTML='<div class="fatal-flash"></div><div class="fatal-text">FATALITY</div>';
+  layer.innerHTML='<div class="fatal-flash"></div><div class="fatal-text">FATALITY</div><div class="fatal-sub">secret move</div>';
   layer.className='egg-layer show fatal';
   if(SETTINGS.sound){ tone(60,0.5,'sawtooth',0.09); setTimeout(()=>tone(38,0.7,'sawtooth',0.08),120); }
   buzz([0,60,40,120]);
@@ -740,73 +827,43 @@ function speakClue(){
   const q=S.qs[S.i]; if(!('speechSynthesis' in window)){ toast("Audio not supported"); return; }
   speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(q.clue); u.rate=.96; u.pitch=1; speechSynthesis.speak(u);
 }
-function skipQuestion(){
-  if(S.locked)return; S.locked=true; S.combo=0; const q=S.qs[S.i];
-  const sub=document.getElementById('subtitle'); sub.classList.remove('wrong');
-  sub.innerHTML=`<span class="lbl">it was</span>${esc(titleCase(q.answer))}`;
-  S.results[S.i]=false; renderPips();
-  setTimeout(next,1150);
-}
+function skipQuestion(){ if(S.locked)return; failClue('skip'); }
 function next(){ if('speechSynthesis' in window) speechSynthesis.cancel(); S.i++; if(S.i>=S.qs.length) endRound(); else loadQuestion(); }
 function bump(){ const line=document.getElementById('answerLine'); line.classList.add('shake'); setTimeout(()=>line.classList.remove('shake'),350); }
 
 /* ============ RESULTS ============ */
 function rankFor(c){ switch(c){ case 5:return{rank:"S",crit:"Perfect Run"}; case 4:return{rank:"A",crit:"High Score"}; case 3:return{rank:"B",crit:"Not Bad"}; case 2:return{rank:"C",crit:"Continue?"}; case 1:return{rank:"D",crit:"Rough Start"}; default:return{rank:"F",crit:"Game Over"}; } }
 function serial(){ return Array.from({length:12},()=>Math.random().toString(36)[2]||"0").join("").toUpperCase(); }
-let hsSaved=false;
-function endRound(){
-  const r=rankFor(S.correct); const now=new Date();
-  const qualifies=hsQualifies(S.score);
-  const when=now.toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric'})+" \u00b7 "+now.toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit'});
-  const markers=S.results.map(v=>`<div class="m ${v===true?'ok':v===false?'miss':''}"></div>`).join('');
-  document.getElementById('ticket').innerHTML=`
-    <div class="t-brand"><div class="cinema">PLOT TWISTED</div><div class="admit">GAMING EDITION</div></div>
-    <div class="t-row"><span class="k">DATE</span><span class="v">${when}</span></div>
-    <div class="t-row"><span class="k">CLEARED</span><span class="v">${S.correct}/${S.qs.length} stages</span></div>
-    <div class="t-row"><span class="k">MAX COMBO</span><span class="v">x${S.maxCombo}</span></div>
-    <div class="t-score"><div class="num">${S.score}</div><div class="lbl">FINAL SCORE</div></div>
-    <div class="t-rating"><div class="rank">${r.rank} RANK</div><div class="crit">${r.crit}</div></div>
-    <div class="t-markers">${markers}</div>
-    <div class="t-serial">NO. ${serial()} \u00b7 NOBODY CREATIVE</div>`;
-  const entry=document.getElementById('hsEntry');
-  hsSaved=false;
-  if(qualifies){
-    entry.style.display='block';
-    const inp=document.getElementById('initials');
-    inp.value=''; inp.disabled=false;
-    document.getElementById('saveHsBtn').disabled=false;
-    setTimeout(()=>inp.focus(),60);
-  } else { entry.style.display='none'; }
-  showScreen('receipt');
+function countUp(id,target,dur){
+  const el=document.getElementById(id); if(!el) return;
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){ el.textContent=target; return; }
+  const t0=performance.now();
+  function step(now){ const p=Math.min(1,(now-t0)/dur); el.textContent=Math.round(target*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(step); }
+  requestAnimationFrame(step);
 }
-function saveHs(){
-  if(hsSaved) return;
-  const initials=escHs(document.getElementById('initials').value||'AAA');
-  hsCommit(initials,S.score); hsSaved=true;
-  renderHsBoard(initials);
-  const entry=document.getElementById('hsEntry');
-  entry.innerHTML='<div class="hs-entry-h" style="animation:none;color:var(--green)">\u2713 SCORE SAVED</div>';
-  sfxCoin(); toast('High score saved');
+function endRound(){
+  const r=rankFor(S.correct);
+  document.getElementById('vicBanner').textContent = S.correct===S.qs.length ? 'PERFECT RUN!' : 'RUN COMPLETE';
+  const rk=document.getElementById('vicRank'); rk.textContent=r.rank; rk.className='vic-rank rank-'+r.rank.toLowerCase();
+  document.getElementById('vicCrit').textContent=r.crit;
+  document.getElementById('vicPips').innerHTML=S.results.map(v=>`<span class="pip ${v===true?'ok':'miss'}"></span>`).join('');
+  const inp=document.getElementById('initials'); inp.value = playerInitials==='AAA' ? '' : playerInitials;
+  showScreen('victory');
+  countUp('vicScore', S.score, 950);
+  sfxVictory(); flashScreen();
+}
+function gameOverFailed(){
+  document.getElementById('goSub').textContent='You ran out of lives.';
+  document.getElementById('goStats').innerHTML=`Reached Stage ${S.i+1} / ${S.qs.length}<br>Cleared ${S.correct} &middot; Score ${S.score}`;
+  sfxGameOver();
+  showScreen('gameover');
 }
 function replay(){ startArcade(); }
 
-/* ============ SHARE CARD ============ */
-async function shareScoreCard(){
-  try{
-    const blob=await renderCard();
-    const file=new File([blob],'plot-twisted-gaming.png',{type:'image/png'});
-    if(navigator.canShare && navigator.canShare({files:[file]})){
-      try{ await navigator.share({files:[file], text:'Plot Twisted: Gaming Edition'}); return; }catch(_){}
-    }
-    const url=URL.createObjectURL(blob);
-    const a=document.createElement('a'); a.href=url; a.download='plot-twisted-gaming.png';
-    document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(()=>URL.revokeObjectURL(url),2000);
-    toast("Score card saved");
-  }catch(err){ toast("Long-press the card to save"); }
-}
+/* ============ SCORE CARD (build / save / share / copy) ============ */
+let lastCardCanvas=null;
 function roundRect(x,X,Y,w,h,r){ x.beginPath(); x.moveTo(X+r,Y); x.arcTo(X+w,Y,X+w,Y+h,r); x.arcTo(X+w,Y+h,X,Y+h,r); x.arcTo(X,Y+h,X,Y,r); x.arcTo(X,Y,X+w,Y,r); x.closePath(); }
-async function renderCard(){
+async function buildCardCanvas(){
   if(document.fonts){ try{ await document.fonts.load('74px "Press Start 2P"'); await document.fonts.load('26px "Press Start 2P"'); await document.fonts.load('40px "VT323"'); await document.fonts.ready; }catch(_){} }
   const W=1080,H=1350,cx=W/2,r=rankFor(S.correct);
   const c=document.createElement('canvas'); c.width=W; c.height=H; const x=c.getContext('2d');
@@ -814,27 +871,68 @@ async function renderCard(){
   x.fillStyle=g; x.fillRect(0,0,W,H);
   x.strokeStyle='#2ff3ff'; x.lineWidth=8; roundRect(x,40,40,W-80,H-80,26); x.stroke();
   x.textAlign='center';
-  x.fillStyle='#ffb43d'; x.font='26px "Press Start 2P",monospace'; x.fillText('\u25c6  PLOT TWISTED  \u25c6', cx,150);
-  x.font='72px "Press Start 2P",monospace';
-  x.save(); x.shadowColor='rgba(255,61,154,.7)'; x.shadowBlur=34; x.fillStyle='#ff3d9a'; x.fillText('GAMING', cx,258); x.fillText('EDITION', cx,352); x.restore();
-  const px=110,pw=W-220,py=440,ph=470;
+  x.fillStyle='#ffb43d'; x.font='26px "Press Start 2P",monospace'; x.fillText('\u25c6  PLOT TWISTED  \u25c6', cx,144);
+  x.save(); x.shadowColor='rgba(255,61,154,.7)'; x.shadowBlur=34; x.fillStyle='#ff3d9a'; x.font='72px "Press Start 2P",monospace'; x.fillText('GAMING', cx,250); x.fillText('EDITION', cx,344); x.restore();
+  // player tag (own band, above the panel — no overlap)
+  x.fillStyle='#9a8bc0'; x.font='20px "Press Start 2P",monospace'; x.fillText('PLAYER', cx,404);
+  x.save(); x.shadowColor='rgba(255,180,61,.5)'; x.shadowBlur=14; x.fillStyle='#ffb43d'; x.font='40px "Press Start 2P",monospace'; x.fillText((playerInitials||'AAA'), cx,452); x.restore();
+  // score panel
+  const px=110,pw=W-220,py=486,ph=430;
   const sg=x.createLinearGradient(0,py,0,py+ph); sg.addColorStop(0,'#081018'); sg.addColorStop(1,'#04070b');
   x.fillStyle=sg; roundRect(x,px,py,pw,ph,18); x.fill();
   x.strokeStyle='#2c3f4a'; x.lineWidth=3; roundRect(x,px,py,pw,ph,18); x.stroke();
-  x.fillStyle='#cfeffb'; x.font='40px "VT323",monospace'; x.fillText('WORLD: '+S.catName, cx,py+80);
-  x.fillStyle='#2ff3ff'; x.font='150px "Press Start 2P",monospace'; x.save(); x.shadowColor='rgba(47,243,255,.4)'; x.shadowBlur=30; x.fillText(String(S.score), cx,py+250); x.restore();
-  x.fillStyle='#9a8bc0'; x.font='24px "Press Start 2P",monospace'; x.fillText('FINAL SCORE', cx,py+310);
-  x.fillStyle='#ffb43d'; x.font='70px "Press Start 2P",monospace'; x.fillText(r.rank+' RANK', cx,py+405);
-  x.fillStyle='#ff3d9a'; x.font='26px "Press Start 2P",monospace'; x.fillText(r.crit.toUpperCase()+'  \u00b7  '+S.correct+'/'+S.qs.length, cx,py+455);
-  const n=S.results.length||5,sw=120,gap=18,tot=n*sw+(n-1)*gap,sx=cx-tot/2,sy=985;
+  x.fillStyle='#2ff3ff'; x.save(); x.shadowColor='rgba(47,243,255,.4)'; x.shadowBlur=30; x.font='150px "Press Start 2P",monospace'; x.fillText(String(S.score), cx,py+180); x.restore();
+  x.fillStyle='#9a8bc0'; x.font='24px "Press Start 2P",monospace'; x.fillText('FINAL SCORE', cx,py+236);
+  x.fillStyle='#ffb43d'; x.font='70px "Press Start 2P",monospace'; x.fillText(r.rank+' RANK', cx,py+340);
+  x.fillStyle='#ff3d9a'; x.font='26px "Press Start 2P",monospace'; x.fillText(r.crit.toUpperCase()+'  \u00b7  '+S.correct+'/'+S.qs.length, cx,py+392);
+  // markers
+  const n=S.results.length||5,sw=120,gap=18,tot=n*sw+(n-1)*gap,sx=cx-tot/2,sy=978;
   for(let i=0;i<n;i++){ const bx=sx+i*(sw+gap),res=S.results[i];
     x.fillStyle = res===true?'#5ee08a':res===false?'#ff4d5e':'#3a2150';
     roundRect(x,bx,sy,sw,26,8); x.fill(); }
-  x.fillStyle='#c9b6ee'; x.font='38px "VT323",monospace'; x.fillText('Name the game from one twisted line.', cx,1120);
-  x.fillStyle='#ffb43d'; x.font='22px "Press Start 2P",monospace'; x.fillText('TRUST NOBODY', cx,1210);
-  x.fillStyle='#6b5a8a'; x.font='16px "Press Start 2P",monospace'; x.fillText('A NOBODY CREATIVE PRODUCTION', cx,1258);
+  x.fillStyle='#c9b6ee'; x.font='38px "VT323",monospace'; x.fillText('Name the game from one twisted line.', cx,1118);
+  x.fillStyle='#ffb43d'; x.font='22px "Press Start 2P",monospace'; x.fillText('TRUST NOBODY', cx,1208);
+  x.fillStyle='#6b5a8a'; x.font='16px "Press Start 2P",monospace'; x.fillText('A NOBODY CREATIVE PRODUCTION', cx,1256);
   x.fillStyle='#6b5a8a'; x.font='28px "VT323",monospace'; x.fillText('bencampbell.netlify.app', cx,1298);
-  return await new Promise(res=>c.toBlob(res,'image/png'));
+  return c;
+}
+async function showResults(){
+  onInitials();
+  const canvas=await buildCardCanvas();
+  lastCardCanvas=canvas;
+  try{ document.getElementById('cardPreview').src=canvas.toDataURL('image/png'); }catch(_){}
+  showScreen('receipt');
+}
+function saveCard(){
+  if(!lastCardCanvas) return;
+  lastCardCanvas.toBlob(b=>{ if(!b){toast('Long-press the card to save');return;} const url=URL.createObjectURL(b); const a=document.createElement('a'); a.href=url; a.download='plot-twisted-gaming.png'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),2000); toast('Score card saved'); },'image/png');
+}
+async function shareCard(){
+  if(!lastCardCanvas){ toast('Nothing to share'); return; }
+  lastCardCanvas.toBlob(async b=>{
+    if(!b){ saveCard(); return; }
+    const file=new File([b],'plot-twisted-gaming.png',{type:'image/png'});
+    if(navigator.canShare && navigator.canShare({files:[file]})){
+      try{ await navigator.share({files:[file], text:resultText()}); return; }catch(_){}
+    }
+    saveCard();
+  },'image/png');
+}
+function resultText(){
+  const r=rankFor(S.correct);
+  const pips=S.results.map(v=>v===true?'\ud83d\udfe9':'\ud83d\udfe5').join('');
+  return `\ud83d\udd79\ufe0f Plot Twisted: Gaming \u2014 ${S.score} \u00b7 ${r.rank} RANK\n${pips}\n${SITE_URL}`;
+}
+function copyResult(){
+  const t=resultText();
+  const done=()=>toast('Result copied!');
+  if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(t).then(done).catch(()=>fallbackCopy(t,done)); }
+  else fallbackCopy(t,done);
+}
+function fallbackCopy(t,done){
+  const ta=document.createElement('textarea'); ta.value=t; ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.focus(); ta.select();
+  try{ document.execCommand('copy'); done(); }catch(_){ toast('Copy failed'); }
+  ta.remove();
 }
 
 /* ============ TOAST ============ */
@@ -877,11 +975,10 @@ document.addEventListener('keydown',e=>{
 let footTaps=0, footTimer=null;
 function footPoke(){ footTaps++; clearTimeout(footTimer); footTimer=setTimeout(()=>footTaps=0,1500); if(footTaps>=6){ footTaps=0; unlockMore(); } }
 
-renderHsBoard();
 applySettingsUI();
 initInstall();
 loadClues();
-document.getElementById('initials').addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); saveHs(); } });
+document.getElementById('initials').addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); onInitials(); e.target.blur(); } });
 if(LS.get('ptg_more_unlocked',false)){ const mb=document.getElementById('moreBtn'); if(mb) mb.style.display=''; }
 document.getElementById('lobbyFoot').addEventListener('click', footPoke);
 if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{})); }
