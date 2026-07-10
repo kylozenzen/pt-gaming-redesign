@@ -2,1751 +2,2607 @@
   {
     "clue": "Plumber enters 3D, yells a lot, and makes camera controls everyone’s problem.",
     "answer": "super mario 64",
-    "platform": "Nintendo 64"
+    "platform": "Nintendo 64",
+    "aliases": [
+      "mario 64",
+      "sm64"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Elf kid plays songs so hard that time itself starts taking requests.",
     "answer": "the legend of zelda: ocarina of time",
-    "platform": "Nintendo 64"
+    "platform": "Nintendo 64",
+    "aliases": [
+      "ocarina of time",
+      "zelda ocarina of time",
+      "oot"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "British spy ruins sleepovers with proximity mines and screen-peeking crimes.",
     "answer": "goldeneye 007",
-    "platform": "Nintendo 64"
+    "platform": "Nintendo 64",
+    "aliases": [
+      "goldeneye",
+      "golden eye"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Kids capture tiny monsters, become champions, and somehow call it friendship.",
     "answer": "pokemon red and blue",
-    "platform": "Game Boy"
+    "platform": "Game Boy",
+    "aliases": [
+      "pokemon red",
+      "pokemon blue",
+      "red and blue",
+      "pokemon red blue"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Electric mouse becomes a global brand ambassador for pocket animal violence.",
     "answer": "pokemon yellow",
-    "platform": "Game Boy"
+    "platform": "Game Boy",
+    "aliases": [
+      "pokemon yellow version",
+      "yellow version"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Go-karts destroy family trust one blue shell at a time.",
     "answer": "mario kart 64",
-    "platform": "Nintendo 64"
+    "platform": "Nintendo 64",
+    "aliases": [
+      "mk64"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Nintendo mascots settle workplace disputes by launching each other off platforms.",
     "answer": "super smash bros.",
-    "platform": "Nintendo 64"
+    "platform": "Nintendo 64",
+    "aliases": [
+      "super smash brothers",
+      "smash 64"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Friendship becomes a board game and everyone learns to hate minigames.",
     "answer": "mario party",
-    "platform": "Nintendo 64"
+    "platform": "Nintendo 64",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Bear carries bird, fights witch, and collects enough objects to start a warehouse.",
     "answer": "banjo-kazooie",
-    "platform": "Nintendo 64"
+    "platform": "Nintendo 64",
+    "aliases": [
+      "banjo kazooie"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Fox pilot does barrel rolls because his friends will not stop yelling.",
     "answer": "star fox 64",
-    "platform": "Nintendo 64"
+    "platform": "Nintendo 64",
+    "aliases": [
+      "starfox 64"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Elf kid has three days, one moon, and zero emotional support.",
     "answer": "the legend of zelda: majora's mask",
-    "platform": "Nintendo 64"
-  },
-  {
-    "clue": "Spy game adds aliens, laptop guns, and multiplayer chaos with better hair.",
-    "answer": "perfect dark",
-    "platform": "Nintendo 64"
-  },
-  {
-    "clue": "Tiny paper plumber proves stickers were not required for feelings.",
-    "answer": "paper mario",
-    "platform": "Nintendo 64"
+    "platform": "Nintendo 64",
+    "aliases": [
+      "majora's mask",
+      "zelda majora's mask"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Raccoon, turtle, and friends fish, decorate, and discover cozy debt.",
     "answer": "animal crossing",
-    "platform": "GameCube"
+    "platform": "GameCube",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Plumber vacuums ghosts because his brother got haunted by real estate.",
     "answer": "luigi's mansion",
-    "platform": "GameCube"
+    "platform": "GameCube",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Plumber gets a water backpack and a court-ordered island cleanup arc.",
     "answer": "super mario sunshine",
-    "platform": "GameCube"
+    "platform": "GameCube",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Cartoon elf sails forever because the ocean took over the map.",
     "answer": "the legend of zelda: the wind waker",
-    "platform": "GameCube"
+    "platform": "GameCube",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Space bounty hunter scans every wall like it personally owes her lore.",
     "answer": "metroid prime",
-    "platform": "GameCube"
+    "platform": "GameCube",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Tiny plant workers are thrown into danger by the galaxy’s worst manager.",
     "answer": "pikmin",
-    "platform": "GameCube"
+    "platform": "GameCube",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Mascots fight so fast that college dorms legally became arenas.",
     "answer": "super smash bros. melee",
-    "platform": "GameCube"
+    "platform": "GameCube",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Two drivers per kart, double the screaming, same friendship damage.",
     "answer": "mario kart: double dash!!",
-    "platform": "GameCube"
+    "platform": "GameCube",
+    "aliases": [
+      "mario kart double dash",
+      "double dash"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Government agent roundhouse-kicks villagers who are acting extremely parasite-y.",
     "answer": "resident evil 4",
-    "platform": "GameCube"
+    "platform": "GameCube",
+    "aliases": [
+      "re4",
+      "resident evil four"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Everyone bowls badly until grandma becomes the household athlete.",
     "answer": "wii sports",
-    "platform": "Wii"
+    "platform": "Wii",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Bathroom scale turns family fitness into polite public judgment.",
     "answer": "wii fit",
-    "platform": "Wii"
+    "platform": "Wii",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Plumber visits tiny planets and turns gravity into a toy.",
     "answer": "super mario galaxy",
-    "platform": "Wii"
+    "platform": "Wii",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Elf kid becomes a wolf because this fantasy road trip got dramatic.",
     "answer": "the legend of zelda: twilight princess",
-    "platform": "Wii"
+    "platform": "Wii",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Karts go online and the blue shell discovers broadband.",
     "answer": "mario kart wii",
-    "platform": "Wii"
-  },
-  {
-    "clue": "Nintendo mascots brawl again, now with more trophies and slower friendships.",
-    "answer": "super smash bros. brawl",
-    "platform": "Wii"
+    "platform": "Wii",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "New side-scrolling plumber nostalgia arrives with four-player yelling.",
     "answer": "new super mario bros. wii",
-    "platform": "Wii"
+    "platform": "Wii",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Two plumbers ride dinosaurs and accidentally become chaos co-parents.",
     "answer": "super mario galaxy 2",
-    "platform": "Wii"
+    "platform": "Wii",
+    "aliases": [
+      "mario galaxy 2",
+      "super mario galaxy two"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Squid kids paint war zones and call it fashion-forward teamwork.",
     "answer": "splatoon",
-    "platform": "Wii U"
+    "platform": "Wii U",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Karts look gorgeous while ruining every living room’s emotional stability.",
     "answer": "mario kart 8",
-    "platform": "Wii U"
+    "platform": "Wii U",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Elf wakes up shirtless and reinvents open-world wandering forever.",
     "answer": "the legend of zelda: breath of the wild",
-    "platform": "Switch"
+    "platform": "Switch",
+    "aliases": [
+      "breath of the wild",
+      "zelda breath of the wild",
+      "botw"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Plumber throws his hat at enemies, dinosaurs, and personal boundaries.",
     "answer": "super mario odyssey",
-    "platform": "Switch"
+    "platform": "Switch",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Every Nintendo character arrives to settle cafeteria beef forever.",
     "answer": "super smash bros. ultimate",
-    "platform": "Switch"
+    "platform": "Switch",
+    "aliases": [
+      "smash ultimate",
+      "super smash brothers ultimate"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Karting becomes immortal and the blue shell remains constitutional law.",
     "answer": "mario kart 8 deluxe",
-    "platform": "Switch"
+    "platform": "Switch",
+    "aliases": [
+      "mario kart eight deluxe",
+      "mk8 deluxe",
+      "mk8d"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Island mortgage simulator briefly saves everyone’s pandemic sanity.",
     "answer": "animal crossing: new horizons",
-    "platform": "Switch"
+    "platform": "Switch",
+    "aliases": [
+      "animal crossing new horizons",
+      "new horizons",
+      "acnh"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Elf glues logs to wheels and accidentally starts engineering TikTok.",
     "answer": "the legend of zelda: tears of the kingdom",
-    "platform": "Switch"
+    "platform": "Switch",
+    "aliases": [
+      "tears of the kingdom",
+      "zelda tears of the kingdom",
+      "totk"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Squid kids paint everything again, but now the vibes are louder.",
-    "answer": "splatoon 2",
-    "platform": "Switch"
-  },
-  {
-    "clue": "Squid kids make turf war stylish, chaotic, and weirdly fresh.",
+    "clue": "Squid kids turn three-way turf arguments into a desert fashion show.",
     "answer": "splatoon 3",
-    "platform": "Switch"
-  },
-  {
-    "clue": "Tiny garden workers carry treasure, corpses, and one exhausted astronaut’s hopes.",
-    "answer": "pikmin 4",
-    "platform": "Switch"
+    "platform": "Switch",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Pink puffball eats everything and still looks emotionally available.",
     "answer": "kirby and the forgotten land",
-    "platform": "Switch"
+    "platform": "Switch",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Anime professor teaches strategy, tea time, and war crimes.",
     "answer": "fire emblem: three houses",
-    "platform": "Switch"
+    "platform": "Switch",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Ghost-catching plumber gets trapped in a hotel with bad Yelp energy.",
     "answer": "luigi's mansion 3",
-    "platform": "Switch"
+    "platform": "Switch",
+    "aliases": [],
+    "difficulty": 2
   },
   {
-    "clue": "Monster-catching school trip becomes open-world bug report with heart.",
+    "clue": "Students skip class, ride legendary motorcycles, and picnic through an open-world region.",
     "answer": "pokemon scarlet and violet",
-    "platform": "Switch"
+    "platform": "Switch",
+    "aliases": [
+      "pokemon scarlet",
+      "pokemon violet",
+      "scarlet and violet"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Pokémon goes open-ish world and gives everyone a giant deer bike.",
+    "clue": "Time-traveling teen fills the first Pokédex while wild animals openly attack.",
     "answer": "pokemon legends: arceus",
-    "platform": "Switch"
+    "platform": "Switch",
+    "aliases": [
+      "pokemon arceus",
+      "legends arceus"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Pocket monsters add camping, curry, and a very British gym tour.",
     "answer": "pokemon sword and shield",
-    "platform": "Switch"
+    "platform": "Switch",
+    "aliases": [
+      "pokemon sword",
+      "pokemon shield",
+      "sword and shield"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Archaeologist dual-wields pistols and makes ancient ruins file complaints.",
     "answer": "tomb raider",
-    "platform": "PlayStation"
+    "platform": "PlayStation",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Police mansion proves every locked door requires a gemstone and trauma.",
     "answer": "resident evil",
-    "platform": "PlayStation"
+    "platform": "PlayStation",
+    "aliases": [],
+    "difficulty": 1
   },
   {
-    "clue": "Police station remake begins as zombie paperwork and ends as hallway panic.",
+    "clue": "Rookie cop and college student spend one terrible night doing zombie police-station paperwork.",
     "answer": "resident evil 2",
-    "platform": "PlayStation"
+    "platform": "PlayStation",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Foggy town weaponizes guilt, radio static, and extremely bad vibes.",
     "answer": "silent hill",
-    "platform": "PlayStation"
+    "platform": "PlayStation",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Spiky-haired mercenary fights capitalism, monsters, and giant sword envy.",
     "answer": "final fantasy vii",
-    "platform": "PlayStation"
+    "platform": "PlayStation",
+    "aliases": [
+      "final fantasy 7",
+      "ff7",
+      "ffvii"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Tactical spy hides in boxes and monologues like national security depends on it.",
     "answer": "metal gear solid",
-    "platform": "PlayStation"
+    "platform": "PlayStation",
+    "aliases": [
+      "mgs"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Bandicoot spins through boxes because rent is apparently due.",
     "answer": "crash bandicoot",
-    "platform": "PlayStation"
+    "platform": "PlayStation",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Purple dragon commits tiny acts of arson for gems and friendship.",
     "answer": "spyro the dragon",
-    "platform": "PlayStation"
+    "platform": "PlayStation",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Skateboarder makes every staircase look like a sponsorship opportunity.",
     "answer": "tony hawk's pro skater",
-    "platform": "PlayStation"
+    "platform": "PlayStation",
+    "aliases": [
+      "tony hawk pro skater",
+      "thps"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Skateboarding sequel turns suburban rails into permanent muscle memory.",
+    "clue": "Skaters discover manuals, secret tapes, and that every school has grindable architecture.",
     "answer": "tony hawk's pro skater 2",
-    "platform": "PlayStation"
+    "platform": "PlayStation",
+    "aliases": [
+      "tony hawk pro skater 2",
+      "thps2"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Cars become a license test with better music and more tire anxiety.",
     "answer": "gran turismo",
-    "platform": "PlayStation"
+    "platform": "PlayStation",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Vampire prince explores dad’s castle and invents backtracking chic.",
     "answer": "castlevania: symphony of the night",
-    "platform": "PlayStation"
+    "platform": "PlayStation",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Family issues are solved through electric uppercuts and jaguar masks.",
     "answer": "tekken 3",
-    "platform": "PlayStation"
+    "platform": "PlayStation",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Fashionable thieves, demons, and school schedules collide with impossible style.",
     "answer": "persona 5",
-    "platform": "PlayStation 4"
+    "platform": "PlayStation 4",
+    "aliases": [
+      "p5"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Teen detectives fight fog, friendship, and suspiciously convenient TV access.",
-    "answer": "persona 4 golden",
-    "platform": "PlayStation Vita"
-  },
-  {
-    "clue": "High school kids shoot shadows after class because extracurriculars went feral.",
+    "clue": "Teenagers point fake guns at their heads before fighting midnight homework.",
     "answer": "persona 3",
-    "platform": "PlayStation 2"
+    "platform": "PlayStation 2",
+    "aliases": [
+      "p3"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Disney teens fight darkness using a key bigger than their life plan.",
     "answer": "kingdom hearts",
-    "platform": "PlayStation 2"
+    "platform": "PlayStation 2",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Tidus laughs once and the internet never lets him rest.",
     "answer": "final fantasy x",
-    "platform": "PlayStation 2"
+    "platform": "PlayStation 2",
+    "aliases": [
+      "final fantasy 10",
+      "ff10",
+      "ffx"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Stylish demon hunter eats pizza and turns combat into a music video.",
     "answer": "devil may cry",
-    "platform": "PlayStation 2"
+    "platform": "PlayStation 2",
+    "aliases": [],
+    "difficulty": 1
   },
   {
-    "clue": "Angry bald dad deletes Greek mythology with quick-time events.",
+    "clue": "Angry Spartan turns Greek mythology into a very personal layoffs meeting.",
     "answer": "god of war",
-    "platform": "PlayStation 2"
+    "platform": "PlayStation 2",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Tiny hero climbs sad giants for possibly terrible romance reasons.",
     "answer": "shadow of the colossus",
-    "platform": "PlayStation 2"
-  },
-  {
-    "clue": "Boy with horns solves architecture by holding hands really hard.",
-    "answer": "ico",
-    "platform": "PlayStation 2"
+    "platform": "PlayStation 2",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Prince rewinds time because parkour finally found consequences.",
     "answer": "prince of persia: the sands of time",
-    "platform": "PlayStation 2"
-  },
-  {
-    "clue": "Sneaky spy fights memes, patriots, and very complicated family drama.",
-    "answer": "metal gear solid 2",
-    "platform": "PlayStation 2"
+    "platform": "PlayStation 2",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Snake eats frogs, salutes history, and makes ladders emotional.",
     "answer": "metal gear solid 3",
-    "platform": "PlayStation 2"
+    "platform": "PlayStation 2",
+    "aliases": [
+      "mgs3",
+      "metal gear solid three"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Skateboarding gets a story mode and every mall becomes a stunt venue.",
     "answer": "tony hawk's underground",
-    "platform": "PlayStation 2"
+    "platform": "PlayStation 2",
+    "aliases": [
+      "tony hawk underground",
+      "thug"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Plastic guitar makes living rooms believe they are arenas.",
     "answer": "guitar hero",
-    "platform": "PlayStation 2"
+    "platform": "PlayStation 2",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Plastic band saves parties while threatening everyone’s rhythm dignity.",
     "answer": "rock band",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Miami crime vacation adds pastel suits, chainsaws, and zero HR.",
     "answer": "grand theft auto: vice city",
-    "platform": "PlayStation 2"
+    "platform": "PlayStation 2",
+    "aliases": [
+      "gta vice city",
+      "vice city"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Man returns home, steals bikes, and somehow fights an entire state.",
     "answer": "grand theft auto: san andreas",
-    "platform": "PlayStation 2"
+    "platform": "PlayStation 2",
+    "aliases": [
+      "gta san andreas",
+      "san andreas"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Crime goes 3D and everyone learns traffic laws are decorative.",
     "answer": "grand theft auto iii",
-    "platform": "PlayStation 2"
-  },
-  {
-    "clue": "Treasure hunter quips while destroying priceless ancient property.",
-    "answer": "uncharted: drake's fortune",
-    "platform": "PlayStation 3"
+    "platform": "PlayStation 2",
+    "aliases": [
+      "grand theft auto 3",
+      "gta 3",
+      "gta iii"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Treasure man hangs from trains and flirts with disaster professionally.",
     "answer": "uncharted 2: among thieves",
-    "platform": "PlayStation 3"
+    "platform": "PlayStation 3",
+    "aliases": [
+      "uncharted 2",
+      "among thieves"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Treasure dad brings ropes, quips, and one last lawsuit against history.",
     "answer": "uncharted 4: a thief's end",
-    "platform": "PlayStation 4"
+    "platform": "PlayStation 4",
+    "aliases": [
+      "uncharted 4",
+      "a thief's end"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Sad dad escorts teen through mushroom apocalypse and emotional damage.",
     "answer": "the last of us",
-    "platform": "PlayStation 3"
+    "platform": "PlayStation 3",
+    "aliases": [
+      "tlou",
+      "last of us"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Revenge road trip proves guitars cannot solve everything.",
     "answer": "the last of us part ii",
-    "platform": "PlayStation 4"
+    "platform": "PlayStation 4",
+    "aliases": [
+      "the last of us 2",
+      "last of us 2",
+      "tlou2"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Origami killer turns parenting into rain-soaked button prompts.",
     "answer": "heavy rain",
-    "platform": "PlayStation 3"
+    "platform": "PlayStation 3",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Silent scarf person walks through sand and somehow emotionally destroys everyone.",
     "answer": "journey",
-    "platform": "PlayStation 3"
+    "platform": "PlayStation 3",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Tiny knitted person turns platforming into a craft-store portfolio.",
     "answer": "littlebigplanet",
-    "platform": "PlayStation 3"
+    "platform": "PlayStation 3",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Victorian hunters fix monster problems with aggressive medical malpractice.",
     "answer": "bloodborne",
-    "platform": "PlayStation 4"
+    "platform": "PlayStation 4",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Robot dinosaur hunter fights capitalism, tribes, and robo-T-rexes.",
     "answer": "horizon zero dawn",
-    "platform": "PlayStation 4"
-  },
-  {
-    "clue": "Robot dinosaur sequel adds swimming, politics, and bigger mechanical headaches.",
-    "answer": "horizon forbidden west",
-    "platform": "PlayStation 5"
+    "platform": "PlayStation 4",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Web-slinger fights crime, backpacks, and New York’s collectible problem.",
     "answer": "marvel's spider-man",
-    "platform": "PlayStation 4"
+    "platform": "PlayStation 4",
+    "aliases": [
+      "spider-man",
+      "spiderman",
+      "marvel spider-man"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Younger Spider-Man learns winter crime has incredible lighting.",
-    "answer": "marvel's spider-man: miles morales",
-    "platform": "PlayStation 5"
-  },
-  {
-    "clue": "Two Spider-Men juggle villains, podcasts, and relationship notifications.",
+    "clue": "Two Spider-Men swap shifts while symbiote therapy makes everyone worse.",
     "answer": "marvel's spider-man 2",
-    "platform": "PlayStation 5"
+    "platform": "PlayStation 5",
+    "aliases": [
+      "spider-man 2",
+      "spiderman 2"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Dad and boy continue therapy during extremely cold apocalypse weather.",
     "answer": "god of war ragnarok",
-    "platform": "PlayStation 5"
+    "platform": "PlayStation 5",
+    "aliases": [
+      "god of war ragnarök",
+      "god of war 5"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Samurai lets the wind do GPS while slicing invaders beautifully.",
     "answer": "ghost of tsushima",
-    "platform": "PlayStation 4"
+    "platform": "PlayStation 4",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Delivery man balances packages, babies, and deeply weird rain.",
     "answer": "death stranding",
-    "platform": "PlayStation 4"
+    "platform": "PlayStation 4",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Robot cat knocks things off shelves in a neon apocalypse.",
     "answer": "stray",
-    "platform": "PlayStation 5"
+    "platform": "PlayStation 5",
+    "aliases": [],
+    "difficulty": 1
   },
   {
-    "clue": "Lombax and robot buddy jump dimensions and therapy bills.",
-    "answer": "ratchet & clank: rift apart",
-    "platform": "PlayStation 5"
-  },
-  {
-    "clue": "Cute robot celebrates PlayStation history with maximum mascot energy.",
+    "clue": "Tiny robot rescues PlayStation mascots from a galaxy-sized hardware accident.",
     "answer": "astro bot",
-    "platform": "PlayStation 5"
-  },
-  {
-    "clue": "Time loop astronaut keeps dying and treating it like progress.",
-    "answer": "returnal",
-    "platform": "PlayStation 5"
+    "platform": "PlayStation 5",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Samurai rhythm game where parrying becomes the entire personality.",
     "answer": "sekiro: shadows die twice",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "sekiro"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Giant sword fantasy where every swamp wants you dead and stylish.",
     "answer": "elden ring",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Dungeons party rolls dice, kisses chaos, and reloads moral decisions.",
     "answer": "baldur's gate 3",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "baldurs gate 3",
+      "bg3"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Armored robot pilots discover corporate war crimes and missile therapy.",
-    "answer": "armored core vi: fires of rubicon",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Puppet boy fights scary puppets because Pinocchio needed boss fights.",
-    "answer": "lies of p",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Writer fights darkness, coffee, and narrative paperwork again.",
+    "clue": "Writer and FBI agent fight a horror story that keeps demanding musical numbers.",
     "answer": "alan wake 2",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Resident agent returns to roundhouse villages, now prettier and scarier.",
-    "answer": "resident evil 4 remake",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Wizard school simulator lets everyone attend class and immediately ignore class.",
     "answer": "hogwarts legacy",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
-    "clue": "Old fighting tournament gets fresh paint and feet still hit faces.",
+    "clue": "World warriors punch each other, adopt weird students, and spray-paint the menu.",
     "answer": "street fighter 6",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "street fighter six",
+      "sf6"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Family martial arts drama returns with prettier punches and worse parenting.",
     "answer": "tekken 8",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "tekken eight"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Ninjas, movie stars, and fatalities reboot the group chat.",
     "answer": "mortal kombat 1",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "mortal kombat one",
+      "mk1"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Space soldiers spread democracy with friendly fire and screaming.",
     "answer": "helldivers 2",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "helldivers two"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Deck-building poker game turns jokers into a full-time job.",
     "answer": "balatro",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Creature-collecting survival game asks what if Pokémon had workplace hazards.",
     "answer": "palworld",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Space trash job becomes multiplayer horror and HR cannot help.",
     "answer": "lethal company",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Superhero shooter makes every team fight a comic book traffic jam.",
     "answer": "marvel rivals",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Green space soldier makes LAN parties a personality.",
     "answer": "halo: combat evolved",
-    "platform": "Xbox"
+    "platform": "Xbox",
+    "aliases": [
+      "halo 1",
+      "halo ce",
+      "halo combat evolved"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Green soldier dual-wields aliens and rewires online console trash talk.",
     "answer": "halo 2",
-    "platform": "Xbox"
+    "platform": "Xbox",
+    "aliases": [
+      "halo two"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Green soldier finishes the fight and sells a million dorm pizzas.",
     "answer": "halo 3",
-    "platform": "Xbox 360"
+    "platform": "Xbox 360",
+    "aliases": [
+      "halo three"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Chainsaw guns turn cover-based shooting into a loud bromance.",
     "answer": "gears of war",
-    "platform": "Xbox 360"
-  },
-  {
-    "clue": "Bigger chainsaws, bigger bugs, and more emotionally sweaty armor.",
-    "answer": "gears of war 2",
-    "platform": "Xbox 360"
+    "platform": "Xbox 360",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Alien dating sim disguises itself as saving the galaxy.",
     "answer": "mass effect",
-    "platform": "Xbox 360"
+    "platform": "Xbox 360",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Commander builds the galaxy’s best squad and ignores the main mission.",
     "answer": "mass effect 2",
-    "platform": "Xbox 360"
-  },
-  {
-    "clue": "Space trilogy ends with colors, feelings, and internet yelling.",
-    "answer": "mass effect 3",
-    "platform": "Xbox 360"
+    "platform": "Xbox 360",
+    "aliases": [
+      "mass effect two",
+      "me2"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Fantasy hero kicks chickens and gets morality on a progress bar.",
     "answer": "fable",
-    "platform": "Xbox"
+    "platform": "Xbox",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Space wizard lawyers and friendship decide the galaxy’s fate.",
     "answer": "star wars: knights of the old republic",
-    "platform": "Xbox"
+    "platform": "Xbox",
+    "aliases": [
+      "knights of the old republic",
+      "kotor"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Spy hugs shadows, interrogates guards, and worships night vision.",
     "answer": "tom clancy's splinter cell",
-    "platform": "Xbox"
-  },
-  {
-    "clue": "Car nerds tune spreadsheets until engines become religion.",
-    "answer": "forza motorsport",
-    "platform": "Xbox"
-  },
-  {
-    "clue": "Open-road car festival turns racing into vacation homework.",
-    "answer": "forza horizon",
-    "platform": "Xbox 360"
-  },
-  {
-    "clue": "British car festival makes every field a racetrack somehow.",
-    "answer": "forza horizon 4",
-    "platform": "Xbox One"
+    "platform": "Xbox",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Mexico car festival delivers jumps, dust, and suspiciously perfect weather.",
     "answer": "forza horizon 5",
-    "platform": "Xbox Series X/S"
+    "platform": "Xbox Series X/S",
+    "aliases": [
+      "forza horizon five",
+      "fh5"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Pirates argue over treasure while skeletons ruin the brand partnership.",
     "answer": "sea of thieves",
-    "platform": "Xbox One"
+    "platform": "Xbox One",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Psychic kid explores minds where emotional baggage is actual level design.",
     "answer": "psychonauts 2",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "psychonauts two"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Tiny toys fight through divorce court using platforming therapy.",
     "answer": "it takes two",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Two criminals plan heists, betrayal, and couch co-op trust issues.",
-    "answer": "a way out",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Zombie parkour asks what if rooftops were safer than sidewalks.",
     "answer": "dying light",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Post-apocalyptic biker learns hordes are not a healthy social circle.",
-    "answer": "days gone",
-    "platform": "PlayStation 4"
-  },
-  {
-    "clue": "Rat plague turns babysitting into medieval panic management.",
-    "answer": "a plague tale: innocence",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Teen photographer learns time travel makes friendships significantly worse.",
     "answer": "life is strange",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Androids ask if they are alive while humans make everything awkward.",
     "answer": "detroit: become human",
-    "platform": "PlayStation 4"
+    "platform": "PlayStation 4",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Space marine speedruns hell with a shotgun résumé.",
     "answer": "doom",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Scientist causes workplace incident and solves it with a crowbar.",
     "answer": "half-life",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "half life"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Scientist gets gravity gun and turns trash into strategy.",
     "answer": "half-life 2",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "half life 2",
+      "half life two"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Terrorists and counter-terrorists fight over bomb sites and shopping money.",
     "answer": "counter-strike",
-    "platform": "PC"
-  },
-  {
-    "clue": "Tactical shooter makes every corner feel like a tax audit.",
-    "answer": "counter-strike 2",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "counter strike",
+      "cs"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Space bugs, cowboys, and aliens argue through hotkeys.",
     "answer": "starcraft",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Orcs, humans, and night elves invent competitive clicking stress.",
     "answer": "warcraft iii",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "warcraft 3"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Click demons until pants improve statistically.",
     "answer": "diablo ii",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "diablo 2",
+      "diablo two"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Click demons again, but now auction houses briefly haunt everyone.",
     "answer": "diablo iii",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "diablo 3",
+      "diablo three"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Demons return, horses arrive, and loot still runs the economy.",
     "answer": "diablo iv",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "diablo 4",
+      "diablo four"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Fantasy homework MMO turns strangers into raid coworkers.",
     "answer": "world of warcraft",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "wow"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Catgirls, crystals, and boss telegraphs become a second job.",
     "answer": "final fantasy xiv",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "final fantasy 14",
+      "ff14",
+      "ffxiv"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "History class becomes villagers yelling about wood.",
     "answer": "age of empires ii",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "age of empires 2",
+      "aoe2"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Theme park guests vomit, complain, and fund your coaster crimes.",
     "answer": "rollercoaster tycoon",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Tiny people pee themselves because you removed the bathroom door.",
     "answer": "the sims",
-    "platform": "PC"
-  },
-  {
-    "clue": "Digital dollhouse adds aspirations, chaos, and very suspicious pool ladders.",
-    "answer": "the sims 2",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Digital people get emotions, careers, and DLC for household objects.",
     "answer": "the sims 4",
-    "platform": "PC"
-  },
-  {
-    "clue": "Mayor simulator proves traffic is actually the final boss.",
-    "answer": "simcity 3000",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "sims 4"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "City planning game lets roundabouts become your entire personality.",
     "answer": "cities: skylines",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 1
   },
   {
-    "clue": "Civilization begins with one settler and ends with Gandhi discourse.",
-    "answer": "sid meier's civilization v",
-    "platform": "PC"
-  },
-  {
-    "clue": "Civilization adds districts and makes adjacency bonuses your personality.",
+    "clue": "World leaders stack districts, chase adjacency bonuses, and denounce you before breakfast.",
     "answer": "sid meier's civilization vi",
-    "platform": "PC"
-  },
-  {
-    "clue": "Alien squad misses a 95 percent shot and morale collapses.",
-    "answer": "xcom: enemy unknown",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "civilization 6",
+      "civ 6",
+      "civ vi"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Narrator judges your hallway choices with elite passive aggression.",
     "answer": "the stanley parable",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Border guard stamps sadness for a fictional dictatorship.",
     "answer": "papers, please",
-    "platform": "PC"
-  },
-  {
-    "clue": "Insurance detective solves murders with freeze-frame ghost paperwork.",
-    "answer": "return of the obra dinn",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Disaster cop argues with his necktie and loses to politics.",
     "answer": "disco elysium",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Space archaeologist roasts marshmallows between repeated solar system disasters.",
     "answer": "outer wilds",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Ocean survival teaches that fish are not furniture and depth is rude.",
     "answer": "subnautica",
-    "platform": "PC"
-  },
-  {
-    "clue": "Tiny cube world hides secrets behind fake retro nostalgia.",
-    "answer": "fez",
-    "platform": "PC"
-  },
-  {
-    "clue": "Meat cube rescues bandage girlfriend through sawblade lawsuits.",
-    "answer": "super meat boy",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Crying baby weaponizes tears in the worst basement ever.",
     "answer": "the binding of isaac",
-    "platform": "PC"
-  },
-  {
-    "clue": "Spelunker dies instantly because greed and rope math are hard.",
-    "answer": "spelunky",
-    "platform": "PC"
-  },
-  {
-    "clue": "Neon animal masks make violence feel like a bad dream on VHS.",
-    "answer": "hotline miami",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Creepy castle says looking at monsters is medically unwise.",
     "answer": "amnesia: the dark descent",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Pizzeria robots turn night shift into jump-scare accounting.",
     "answer": "five nights at freddy's",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "fnaf"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Skeletons tell jokes while guilt becomes a combat mechanic.",
     "answer": "undertale",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Quit corporate life, farm, flirt, fish, and fight suspicious slimes.",
     "answer": "stardew valley",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Tiny bug knight explores beautiful bug sadness and map anxiety.",
     "answer": "hollow knight",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Mountain climber battles depression, spikes, and suspicious strawberries.",
     "answer": "celeste",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Greek prince escapes dad through repeated family murder and flirting.",
     "answer": "hades",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Card roguelike turns math into a dopamine trap.",
     "answer": "slay the spire",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 2
   },
   {
-    "clue": "Prisoner becomes meatball ninja in an endless castle.",
+    "clue": "Headless prisoner borrows fresh bodies and speedruns the same castle forever.",
     "answer": "dead cells",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Cup-headed debtors fight cartoons over soul paperwork.",
     "answer": "cuphead",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
-    "clue": "Vampire survival game asks what if numbers became fireworks.",
+    "clue": "One tiny survivor stands still while garlic evolves into industrial crowd control.",
     "answer": "vampire survivors",
-    "platform": "PC"
-  },
-  {
-    "clue": "Pizza chef platforming meltdown moves faster than a health inspector.",
-    "answer": "pizza tower",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Fisherman catches fish, dread, and probably a cursed side hustle.",
     "answer": "dredge",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Sushi restaurant staffing crisis meets surprisingly intense ocean adventure.",
     "answer": "dave the diver",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Tiny fox finds secrets and refuses to explain the manual.",
     "answer": "tunic",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Painting platformer makes sad French fantasy extremely stabby.",
-    "answer": "gris",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Two brothers flee rules, feelings, and supernatural road-trip chaos.",
-    "answer": "life is strange 2",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Blocks, creepers, mining, crafting, accidental architecture degree.",
     "answer": "minecraft",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "2D digging game adds bosses, bunnies, and suspiciously deep caves.",
     "answer": "terraria",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Five players blame jungle while an ancient building explodes.",
     "answer": "league of legends",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "lol",
+      "league"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Ancient defense game with couriers, wards, and thousand-hour tutorials.",
     "answer": "dota 2",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "dota two"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Cartoon mercenaries wear hats and ignore objectives together.",
     "answer": "team fortress 2",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "tf2",
+      "team fortress two"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Hero shooter adds ultimates, loot boxes, and group-chat trauma.",
     "answer": "overwatch",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
-    "clue": "Hero shooter returns with fewer players and more online discourse.",
+    "clue": "Hero shooter removes one tank, adds a 2, and starts three years of discourse.",
     "answer": "overwatch 2",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "overwatch two"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Tactical shooter gives anime powers to people holding tiny angles.",
     "answer": "valorant",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Battle royale makes building a mansion mid-gunfight completely normal.",
     "answer": "fortnite",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Island frying pan simulator creates tactical screaming and door fear.",
     "answer": "pubg: battlegrounds",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "pubg",
+      "playerunknown's battlegrounds",
+      "playerunknowns battlegrounds"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Legends slide downhill, steal armor, and argue about pinging.",
     "answer": "apex legends",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Military battle royale drops everyone into one giant headset argument.",
     "answer": "call of duty: warzone",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "warzone",
+      "cod warzone"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Military shooter discovers modern war and changes every lobby forever.",
     "answer": "call of duty 4: modern warfare",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "cod 4",
+      "call of duty 4",
+      "modern warfare 2007"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Modern warfare sequel adds snowmobiles, betrayal, and lobby mythology.",
     "answer": "call of duty: modern warfare 2",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "modern warfare 2",
+      "mw2",
+      "cod mw2"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Cold War shooter turns zombies into everyone’s favorite side hustle.",
     "answer": "call of duty: black ops",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "black ops",
+      "cod black ops"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Nazi zombies accidentally becomes the mode people remember most.",
     "answer": "call of duty: world at war",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "world at war",
+      "cod world at war"
+    ],
+    "difficulty": 2
   },
   {
-    "clue": "Military shooter levels buildings while your squad screams about objectives.",
+    "clue": "The subway, jets, and collapsing buildings turn squads into loud amateur generals.",
     "answer": "battlefield 3",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "battlefield three",
+      "bf3"
+    ],
+    "difficulty": 2
   },
   {
-    "clue": "Giant multiplayer war says vehicles count as personality traits.",
+    "clue": "A skyscraper falls mid-match and every helicopter pilot develops main-character syndrome.",
     "answer": "battlefield 4",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "battlefield four",
+      "bf4"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Historical shooter gives horses, tanks, and chaos the same server.",
     "answer": "battlefield 1",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "battlefield one",
+      "bf1"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Football with cars turns aerial misses into a lifestyle.",
     "answer": "rocket league",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Bean people fall over until capitalism crowns one survivor.",
     "answer": "fall guys",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Crewmates lie terribly while pretending wiring is important.",
     "answer": "among us",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Space ninjas farm missions while fashion becomes the real endgame.",
     "answer": "warframe",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
-    "clue": "Guardians shoot aliens, collect numbers, and complain lovingly forever.",
-    "answer": "destiny",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Guardians return with more loot, more raids, and more vault anxiety.",
+    "clue": "Guardians lose their vault, regain their powers, and immediately collect more guns.",
     "answer": "destiny 2",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "destiny two"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Monster hunters turn giant lizards into outfits and dinner plans.",
     "answer": "monster hunter: world",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Monster hunting gets wirebugs and turns movement into anime parkour.",
-    "answer": "monster hunter rise",
-    "platform": "Switch"
+    "platform": "Multi",
+    "aliases": [
+      "monster hunter world",
+      "mhw"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Anime open-world gacha makes climbing cliffs and wishing expensive.",
     "answer": "genshin impact",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Space train gacha turns turn-based combat into pretty spreadsheet luck.",
     "answer": "honkai: star rail",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "honkai star rail",
+      "hsr"
+    ],
+    "difficulty": 2
   },
   {
-    "clue": "Post-apocalyptic anime parkour fights robots and battery percentages.",
+    "clue": "Video-store proxies send stylish agents into monster-filled bubbles with a rabbit robot.",
     "answer": "zenless zone zero",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "zzz"
+    ],
+    "difficulty": 2
   },
   {
-    "clue": "Pirate anime RPG lets fruit powers and grinding become life goals.",
-    "answer": "roblox blox fruits",
-    "platform": "Roblox"
+    "clue": "Pirate anime grinders eat magical fruit and turn Roblox into a second job.",
+    "answer": "blox fruits",
+    "platform": "Roblox",
+    "aliases": [
+      "roblox blox fruits"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Kids build everything, adults get confused, and avatars become economies.",
     "answer": "roblox",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Cowboy learns redemption is mostly horseback errands and regret.",
     "answer": "red dead redemption",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "rdr"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Cowboy prequel turns horse bonding into emotional devastation.",
     "answer": "red dead redemption 2",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "red dead 2",
+      "rdr2"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Three criminals share one city and infinite poor choices.",
     "answer": "grand theft auto v",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "grand theft auto 5",
+      "gta 5",
+      "gta v"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Liberty City immigrant discovers the American dream has terrible driving.",
     "answer": "grand theft auto iv",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "grand theft auto 4",
+      "gta 4",
+      "gta iv"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Open-world hacker turns every traffic light into a gadget.",
+    "clue": "Chicago hacker turns traffic lights, phones, and every camera into revenge accessories.",
     "answer": "watch dogs",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Renaissance assassin makes climbing churches a personality.",
     "answer": "assassin's creed ii",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "assassins creed 2",
+      "assassin's creed 2",
+      "ac2"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Hooded parkour guy stabs history class from rooftops.",
     "answer": "assassin's creed",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Pirate assassin makes sea shanties more important than stealth.",
     "answer": "assassin's creed iv: black flag",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "assassins creed 4 black flag",
+      "assassin's creed 4",
+      "black flag",
+      "ac4"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Viking assassin raids England and still finds time for side quests.",
     "answer": "assassin's creed valhalla",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "ac valhalla"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Greek mercenary climbs statues, argues with gods, and loots everything.",
     "answer": "assassin's creed odyssey",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "ac odyssey"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Egyptian assassin origins story adds eagles, sand, and map icons.",
     "answer": "assassin's creed origins",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "ac origins"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Island vacation turns into pirate trauma simulator with a definition of insanity.",
     "answer": "far cry 3",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "far cry three"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Cult county road trip turns every pickup truck into a boss fight.",
     "answer": "far cry 5",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "far cry five"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Himalayan dictator dresses better than your entire rebellion.",
     "answer": "far cry 4",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Hacker shooter gives you drones, masks, and infinite tech support crime.",
-    "answer": "watch dogs 2",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "far cry four"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Masked bodyguard teleports behind class warfare and whispers murder.",
     "answer": "dishonored",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Robot arms man asks why everything in the future is yellow.",
-    "answer": "deus ex: human revolution",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Underwater libertarian city becomes a fishy murder museum.",
     "answer": "bioshock",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Floating racist city proves sky tourism also has problems.",
     "answer": "bioshock infinite",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "bio shock infinite"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Test subject solves puzzles for a passive-aggressive robot cake lie.",
     "answer": "portal",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Robot potato insults you through better puzzle rooms.",
     "answer": "portal 2",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "portal two"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Zombie road trip where friends are mostly boomers and bad aim.",
+    "clue": "Four survivors take a zombie road trip while Boomers and bad aim ruin everything.",
     "answer": "left 4 dead",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "left four dead",
+      "l4d"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Necromorph spaceship teaches vents are never safe.",
     "answer": "dead space",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "deadspace"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Runner parkours through corporate dystopia and shin splints.",
     "answer": "mirror's edge",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Witch punches angels with hair-based wardrobe choices.",
     "answer": "bayonetta",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Undead knight proves rolling is a lifestyle brand.",
     "answer": "dark souls",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Sad knight dies because shield timing is church.",
-    "answer": "demon's souls",
-    "platform": "PlayStation 3"
+    "platform": "Multi",
+    "aliases": [
+      "ds1",
+      "dark souls 1"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Dragon shouts at you; you loot cheese wheels anyway.",
     "answer": "the elder scrolls v: skyrim",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "skyrim",
+      "elder scrolls 5"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Fantasy prison escape becomes dragon paperwork and potato faces.",
+    "clue": "Prison escape becomes portal-closing errands with potato faces and suspicious horse armor.",
     "answer": "the elder scrolls iv: oblivion",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "oblivion",
+      "elder scrolls 4"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Vault kid exits tutorial into radioactive chores and slow-motion headshots.",
     "answer": "fallout 3",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Courier survives a headshot and immediately chooses faction drama.",
     "answer": "fallout: new vegas",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "fallout new vegas",
+      "new vegas"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Post-apocalyptic parent builds settlements nobody asked for.",
     "answer": "fallout 4",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Geralt plays dad, cards, and monster HR consultant.",
     "answer": "the witcher 3: wild hunt",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "witcher 3",
+      "the witcher 3",
+      "wild hunt"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Cyberpunk future launches messy, then eventually finds its chrome.",
+    "clue": "Mercenary installs a dead rock star, steals cars, and negotiates with malfunctioning chrome.",
     "answer": "cyberpunk 2077",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "cyberpunk"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Space explorer scans rocks and joins every faction before lunch.",
     "answer": "starfield",
-    "platform": "Xbox Series X/S"
+    "platform": "Xbox Series X/S",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Space exploration game becomes good after several redemption arcs.",
     "answer": "no man's sky",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Post-apocalyptic delivery shooter lets you be a very violent UPS route.",
-    "answer": "metro exodus",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Apocalypse rogues loot Washington D.C. while backpacks become closets.",
-    "answer": "tom clancy's the division 2",
-    "platform": "Multi"
-  },
-  {
-    "clue": "Cartel co-op shooter turns tactical plans into synchronized panic.",
-    "answer": "tom clancy's ghost recon wildlands",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Rainbow operators prove doors are temporary suggestions.",
     "answer": "rainbow six siege",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "r6 siege",
+      "r6s"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Cards, mana, and topdecks turn math into betrayal.",
     "answer": "hearthstone",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Digital cards, planeswalkers, and rope timers test friendships.",
     "answer": "magic: the gathering arena",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [
+      "mtg arena",
+      "magic arena"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Soccer management turns spreadsheets into Champions League heartbreak.",
     "answer": "football manager",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Basketball mode sells dreams, sneakers, and questionable VC economics.",
     "answer": "nba 2k",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "nba2k"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Annual football game where ratings arguments are basically a sport.",
     "answer": "madden nfl",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "madden"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Soccer game where ultimate teams eat wallets and weekends.",
     "answer": "fifa",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Football game changes name but keeps everyone yelling at ratings.",
     "answer": "ea sports fc",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "ea fc",
+      "fc"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Baseball sim makes perfect swings and card collecting a full calendar.",
     "answer": "mlb the show",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "the show"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Wrestling game lets everyone throw tables and rewrite pay-per-views.",
     "answer": "wwe 2k",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "wwe2k"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Skateboarding returns with ragdolls, kickflips, and beautiful broken ankles.",
     "answer": "skate 3",
-    "platform": "Xbox 360"
+    "platform": "Xbox 360",
+    "aliases": [
+      "skate three"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Underground street racing adds neon, nitrous, and suspiciously shiny pavement.",
     "answer": "need for speed: underground",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "nfs underground"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Open-world racing says cops, billboards, and shortcuts are one lifestyle.",
     "answer": "need for speed: most wanted",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "nfs most wanted"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Takedown racing proves insurance companies should fear boost buttons.",
     "answer": "burnout 3: takedown",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "burnout 3",
+      "burnout three"
+    ],
+    "difficulty": 2
   },
   {
-    "clue": "Snowboarding game turns mountains into trick receipts.",
+    "clue": "Snowboarders launch off mountains while Run-D.M.C. legally owns the entire vibe.",
     "answer": "ssx tricky",
-    "platform": "PlayStation 2"
+    "platform": "PlayStation 2",
+    "aliases": [
+      "ssx"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Olympic chaos where mascots run, jump, and ignore canon.",
     "answer": "mario & sonic at the olympic games",
-    "platform": "Wii"
+    "platform": "Wii",
+    "aliases": [
+      "mario and sonic at the olympic games",
+      "mario and sonic"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Dance game turns living rooms into cardio crimes.",
     "answer": "just dance",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Plastic dancing arrows made arcades smell like ambition.",
     "answer": "dance dance revolution",
-    "platform": "Arcade"
+    "platform": "Arcade",
+    "aliases": [
+      "ddr"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Rhythm game makes circles, drums, and panic look adorable.",
+    "clue": "Smiling drums turn circles into rhythm panic with suspiciously cheerful sound effects.",
     "answer": "taiko no tatsujin",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Blocks fall, you panic, and the music becomes a legally binding contract.",
     "answer": "tetris effect",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Falling blocks battle royale proves even puzzles need elimination anxiety.",
     "answer": "tetris 99",
-    "platform": "Switch"
+    "platform": "Switch",
+    "aliases": [
+      "tetris ninety nine"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Tiny birds destroy pig architecture with physics and rage.",
     "answer": "angry birds",
-    "platform": "Mobile"
+    "platform": "Mobile",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Candy swapping becomes everyone’s aunt’s second job.",
     "answer": "candy crush saga",
-    "platform": "Mobile"
+    "platform": "Mobile",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Village builder turns waiting timers into a lifestyle.",
     "answer": "clash of clans",
-    "platform": "Mobile"
+    "platform": "Mobile",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Tiny card battler makes kings, towers, and emotes deeply personal.",
     "answer": "clash royale",
-    "platform": "Mobile"
+    "platform": "Mobile",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Endless runner makes subway trespassing colorful and monetized.",
     "answer": "subway surfers",
-    "platform": "Mobile"
+    "platform": "Mobile",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Endless runner turns ancient temples into finger-swipe cardio.",
     "answer": "temple run",
-    "platform": "Mobile"
+    "platform": "Mobile",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Fruit gets sliced like your phone screen needs cardio.",
     "answer": "fruit ninja",
-    "platform": "Mobile"
+    "platform": "Mobile",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Tiny helicopter pipe nightmare becomes one-tap rage history.",
     "answer": "flappy bird",
-    "platform": "Mobile"
+    "platform": "Mobile",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Phone walkers hunt pocket monsters and forget crosswalks exist.",
     "answer": "pokemon go",
-    "platform": "Mobile"
+    "platform": "Mobile",
+    "aliases": [
+      "pokémon go"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Five-letter daily puzzle briefly turns everyone into a vocabulary influencer.",
     "answer": "wordle",
-    "platform": "Browser"
-  },
-  {
-    "clue": "Drawing guesses get worse and the group chat gets better.",
-    "answer": "draw something",
-    "platform": "Mobile"
+    "platform": "Browser",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Office time-waster makes cookies, numbers, and existential dread infinite.",
     "answer": "cookie clicker",
-    "platform": "Browser"
+    "platform": "Browser",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Mobile battle royale shrinks the island and expands the yelling.",
     "answer": "free fire",
-    "platform": "Mobile"
+    "platform": "Mobile",
+    "aliases": [],
+    "difficulty": 2
   },
   {
-    "clue": "Mobile legends fight lanes while teammates type essays mid-match.",
+    "clue": "Five phone heroes fight lanes while teammates write essays mid-match.",
     "answer": "mobile legends: bang bang",
-    "platform": "Mobile"
+    "platform": "Mobile",
+    "aliases": [],
+    "difficulty": 2
   },
   {
-    "clue": "Tiny brawlers turn quick matches into thumb-based chaos.",
+    "clue": "Tiny heroes turn three-minute phone matches into trophy anxiety.",
     "answer": "brawl stars",
-    "platform": "Mobile"
+    "platform": "Mobile",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Plumber auto-runs because thumbs deserve a break.",
     "answer": "super mario run",
-    "platform": "Mobile"
+    "platform": "Mobile",
+    "aliases": [],
+    "difficulty": 2
   },
   {
-    "clue": "Kart racing reaches phones and item chaos follows everyone outside.",
-    "answer": "mario kart tour",
-    "platform": "Mobile"
-  },
-  {
-    "clue": "Teen campers discover counselors, monsters, and bad decisions after dark.",
+    "clue": "Eight friends visit a mountain lodge where every bad choice gets professionally remembered.",
     "answer": "until dawn",
-    "platform": "PlayStation 4"
+    "platform": "PlayStation 4",
+    "aliases": [],
+    "difficulty": 1
   },
   {
-    "clue": "Creepy neighbor makes breaking and entering a YouTube genre.",
+    "clue": "Child breaks into the house across the street because stealth needed suburban zoning.",
     "answer": "hello neighbor",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Tall faceless man makes forests terrible for cardio.",
     "answer": "slender: the eight pages",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "News camera man visits asylum and immediately regrets journalism.",
     "answer": "outlast",
-    "platform": "PC"
+    "platform": "PC",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Family dinner becomes hillbilly mold nightmare.",
     "answer": "resident evil 7: biohazard",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "resident evil 7",
+      "re7",
+      "resident evil seven"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Tall vampire lady briefly owns the entire internet.",
     "answer": "resident evil village",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "resident evil 8",
+      "re8",
+      "village"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Goose becomes a small-town lawsuit with a beak.",
     "answer": "untitled goose game",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
-    "clue": "Cooking with friends proves kitchens need fewer portals and more therapy.",
+    "clue": "Tiny chefs cook on moving trucks, icebergs, and kitchens designed by divorce attorneys.",
     "answer": "overcooked",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Cooking sequel adds throwing food, which somehow helps and hurts.",
     "answer": "overcooked 2",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "overcooked two"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Bomb defusal party game turns instructions into relationship counseling.",
     "answer": "keep talking and nobody explodes",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "keep talking nobody explodes"
+    ],
+    "difficulty": 2
   },
   {
-    "clue": "Drawing game turns private jokes into public evidence.",
+    "clue": "Phones become buzzers while trivia, lies, and bad drawings become public evidence.",
     "answer": "jackbox party pack",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
-    "clue": "Physics climbers grab rocks and each other’s last nerve.",
+    "clue": "Wobbly jelly people punch each other on trucks, rooftops, and workplace hazards.",
     "answer": "gang beasts",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Wobbly humans solve puzzles like toddlers moving a couch.",
     "answer": "human: fall flat",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
-    "clue": "Tiny foxes fight gods and poor communication in a beautiful forest.",
+    "clue": "Tiny glowing forest spirit platform-jumps through grief while the soundtrack attacks your feelings.",
     "answer": "ori and the blind forest",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Blue hedgehog gets 3D ambition and a whale with workplace issues.",
     "answer": "sonic adventure",
-    "platform": "Dreamcast"
+    "platform": "Dreamcast",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Blue hedgehog, edgy hedgehog, and city property damage become iconic.",
     "answer": "sonic adventure 2",
-    "platform": "Dreamcast"
+    "platform": "Dreamcast",
+    "aliases": [
+      "sonic adventure two",
+      "sa2"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Blue hedgehog runs through nostalgia like a very fast apology.",
     "answer": "sonic generations",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Blue hedgehog goes open-zone and remembers speed is the point.",
     "answer": "sonic frontiers",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Taxi drivers weaponize traffic laws and aggressively cheerful music.",
     "answer": "crazy taxi",
-    "platform": "Dreamcast"
+    "platform": "Dreamcast",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Skater kids spray graffiti while capitalism chases them on rollerblades.",
     "answer": "jet set radio",
-    "platform": "Dreamcast"
+    "platform": "Dreamcast",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Japanese life simulator makes forklifts strangely memorable.",
     "answer": "shenmue",
-    "platform": "Dreamcast"
+    "platform": "Dreamcast",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Ex-yakuza dances, fights, and manages real estate with terrifying commitment.",
     "answer": "yakuza 0",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Former gangster becomes a turn-based hero through job applications.",
     "answer": "yakuza: like a dragon",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Androids fight robots and philosophy steals the entire show.",
     "answer": "nier: automata",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Demon hunters style-rank family therapy with swords and motorcycles.",
     "answer": "devil may cry 5",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "devil may cry five",
+      "dmc5"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Muscle hero fights demons, gods, and the inventory menu.",
+    "clue": "Royal bodyguard turns giant summon custody disputes into full-screen boss fights.",
     "answer": "final fantasy xvi",
-    "platform": "PlayStation 5"
+    "platform": "PlayStation 5",
+    "aliases": [
+      "final fantasy 16",
+      "ff16",
+      "ffxvi"
+    ],
+    "difficulty": 2
   },
   {
     "clue": "Cloud and friends remake nostalgia with ghosts, fate, and hair physics.",
     "answer": "final fantasy vii remake",
-    "platform": "PlayStation 4"
+    "platform": "PlayStation 4",
+    "aliases": [
+      "final fantasy 7 remake",
+      "ff7 remake"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Cloud and friends continue the remake road trip with maximum minigames.",
     "answer": "final fantasy vii rebirth",
-    "platform": "PlayStation 5"
+    "platform": "PlayStation 5",
+    "aliases": [
+      "final fantasy 7 rebirth",
+      "ff7 rebirth"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Royal road trip makes boy band camping emotionally devastating.",
     "answer": "final fantasy xv",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "final fantasy 15",
+      "ff15",
+      "ffxv"
+    ],
+    "difficulty": 2
   },
   {
-    "clue": "Giant swords, giant worlds, and giant anime feelings.",
+    "clue": "Teen with a future-seeing sword runs across giants while everyone shouts attack names.",
     "answer": "xenoblade chronicles",
-    "platform": "Wii"
+    "platform": "Wii",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Courtroom lawyer points dramatically at parrots and trauma.",
     "answer": "phoenix wright: ace attorney",
-    "platform": "Nintendo DS"
+    "platform": "Nintendo DS",
+    "aliases": [
+      "phoenix wright",
+      "ace attorney"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Rich professor solves puzzles while everyone hides crimes.",
+    "clue": "Top-hatted professor enters a village where nobody shares information until you solve a puzzle.",
     "answer": "professor layton and the curious village",
-    "platform": "Nintendo DS"
+    "platform": "Nintendo DS",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Virtual puppies prove responsibility can fit in your pocket.",
     "answer": "nintendogs",
-    "platform": "Nintendo DS"
+    "platform": "Nintendo DS",
+    "aliases": [],
+    "difficulty": 1
   },
   {
-    "clue": "Brain training makes math feel like a doctor appointment.",
+    "clue": "Handheld doctor estimates your mental age after making you yell colors at a microphone.",
     "answer": "brain age",
-    "platform": "Nintendo DS"
+    "platform": "Nintendo DS",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Tiny racers fit in your pocket and still ruin friendships.",
     "answer": "mario kart ds",
-    "platform": "Nintendo DS"
+    "platform": "Nintendo DS",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Side-scrolling Mario returns and acts like nostalgia paid rent.",
     "answer": "new super mario bros.",
-    "platform": "Nintendo DS"
+    "platform": "Nintendo DS",
+    "aliases": [],
+    "difficulty": 1
   },
   {
     "clue": "Pocket monsters add time, space, and very dramatic legendary pets.",
     "answer": "pokemon diamond and pearl",
-    "platform": "Nintendo DS"
+    "platform": "Nintendo DS",
+    "aliases": [
+      "pokemon diamond",
+      "pokemon pearl",
+      "diamond and pearl"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Pocket monsters get black-and-white morality and better story homework.",
     "answer": "pokemon black and white",
-    "platform": "Nintendo DS"
+    "platform": "Nintendo DS",
+    "aliases": [
+      "pokemon black",
+      "pokemon white",
+      "black and white"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Pocket monsters go 3D and everyone finally sees the battle animations.",
     "answer": "pokemon x and y",
-    "platform": "Nintendo 3DS"
+    "platform": "Nintendo 3DS",
+    "aliases": [
+      "pokemon x",
+      "pokemon y",
+      "x and y"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Pocket monsters vacation in Hawaii and retire gym culture briefly.",
     "answer": "pokemon sun and moon",
-    "platform": "Nintendo 3DS"
+    "platform": "Nintendo 3DS",
+    "aliases": [
+      "pokemon sun",
+      "pokemon moon",
+      "sun and moon"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Animal friends build a town and one mayor does all the work.",
     "answer": "animal crossing: new leaf",
-    "platform": "Nintendo 3DS"
+    "platform": "Nintendo 3DS",
+    "aliases": [],
+    "difficulty": 1
   },
   {
-    "clue": "Handheld Mario gets cat suits, clear pipes, and adorable chaos.",
+    "clue": "Four heroes wear cat suits, climb clear pipes, and fight over the crown.",
     "answer": "super mario 3d world",
-    "platform": "Wii U"
+    "platform": "Wii U",
+    "aliases": [],
+    "difficulty": 1
   },
   {
-    "clue": "Cars with neon underglow make family sedans feel inadequate.",
+    "clue": "Street racers cross three cities while neon body kits bully every stock sedan.",
     "answer": "midnight club 3: dub edition",
-    "platform": "PlayStation 2"
+    "platform": "PlayStation 2",
+    "aliases": [
+      "midnight club 3",
+      "midnight club three"
+    ],
+    "difficulty": 2
   },
   {
-    "clue": "Illegal street racing turns every corner into a nitrous decision.",
+    "clue": "Street racer gets an open city, a trunk full of speakers, and twelve kinds of neon.",
     "answer": "need for speed: underground 2",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "nfs underground 2",
+      "need for speed underground two"
+    ],
+    "difficulty": 2
   },
   {
-    "clue": "Open-world superhero prototype consumes people and runs up buildings.",
+    "clue": "Amnesiac shapeshifter eats pedestrians, steals faces, and treats skyscrapers like stairs.",
     "answer": "prototype",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Electric courier climbs buildings and chooses lightning morality.",
     "answer": "infamous",
-    "platform": "PlayStation 3"
-  },
-  {
-    "clue": "Mutant superpowers, parkour, and Seattle graffiti become a rebellion starter kit.",
-    "answer": "infamous second son",
-    "platform": "PlayStation 4"
+    "platform": "PlayStation 3",
+    "aliases": [],
+    "difficulty": 2
   },
   {
     "clue": "Caped billionaire punches clowns and finally gets a good superhero game.",
     "answer": "batman: arkham asylum",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "arkham asylum"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Caped billionaire turns a whole city into night-shift punching.",
     "answer": "batman: arkham city",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "arkham city"
+    ],
+    "difficulty": 1
   },
   {
     "clue": "Caped billionaire gets a tank and Gotham traffic suffers forever.",
     "answer": "batman: arkham knight",
-    "platform": "Multi"
+    "platform": "Multi",
+    "aliases": [
+      "arkham knight"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Mad Max drives through desert misery and collects scrap like therapy.",
-    "answer": "mad max",
-    "platform": "Multi"
+    "clue": "French sad people parry a painted apocalypse while the soundtrack wins custody of your feelings.",
+    "answer": "clair obscur: expedition 33",
+    "platform": "Multi",
+    "aliases": [
+      "clair obscur expedition 33",
+      "expedition 33"
+    ],
+    "difficulty": 1
   },
   {
-    "clue": "Mordor ranger weaponizes orc office politics.",
-    "answer": "middle-earth: shadow of mordor",
-    "platform": "Multi"
+    "clue": "Kart racers leave the track, cross the countryside, and turn free roam into traffic court.",
+    "answer": "mario kart world",
+    "platform": "Switch 2",
+    "aliases": [
+      "mk world"
+    ],
+    "difficulty": 1
+  },
+  {
+    "clue": "Gorilla punches through the planet while a tiny singer handles navigation.",
+    "answer": "donkey kong bananza",
+    "platform": "Switch 2",
+    "aliases": [
+      "dk bananza"
+    ],
+    "difficulty": 1
+  },
+  {
+    "clue": "Delivery man crosses Australia with a puppet, a baby, and weather that hates logistics.",
+    "answer": "death stranding 2: on the beach",
+    "platform": "PlayStation 5",
+    "aliases": [
+      "death stranding 2",
+      "death stranding two",
+      "ds2 on the beach"
+    ],
+    "difficulty": 2
+  },
+  {
+    "clue": "Underworld witch fights the Titan of Time because family therapy is still fully booked.",
+    "answer": "hades ii",
+    "platform": "Multi",
+    "aliases": [
+      "hades 2",
+      "hades two"
+    ],
+    "difficulty": 1
+  },
+  {
+    "clue": "Needle princess escapes bug prison after making the internet wait several geological eras.",
+    "answer": "hollow knight: silksong",
+    "platform": "Multi",
+    "aliases": [
+      "silksong",
+      "hollow knight silksong"
+    ],
+    "difficulty": 1
+  },
+  {
+    "clue": "Surface scavengers grab loot while giant robots audit every extraction.",
+    "answer": "arc raiders",
+    "platform": "Multi",
+    "aliases": [
+      "arc"
+    ],
+    "difficulty": 2
+  },
+  {
+    "clue": "Blacksmith’s son survives medieval Europe through sword lessons, bad hygiene, and worse politics.",
+    "answer": "kingdom come: deliverance ii",
+    "platform": "Multi",
+    "aliases": [
+      "kingdom come deliverance 2",
+      "kcd2"
+    ],
+    "difficulty": 2
+  },
+  {
+    "clue": "Two writers get trapped in their own genres and co-op through unresolved creative differences.",
+    "answer": "split fiction",
+    "platform": "Multi",
+    "aliases": [],
+    "difficulty": 1
+  },
+  {
+    "clue": "Hell’s angriest employee gets a shield saw and takes medieval customer service personally.",
+    "answer": "doom: the dark ages",
+    "platform": "Multi",
+    "aliases": [
+      "doom the dark ages",
+      "dark ages"
+    ],
+    "difficulty": 1
   }
 ]

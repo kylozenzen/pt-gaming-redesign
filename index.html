@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Plot Twisted: Gaming Edition</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -135,16 +135,6 @@
   @keyframes shakeFx{0%,100%{transform:translate(0,0)}20%{transform:translate(-5px,3px)}40%{transform:translate(5px,-3px)}60%{transform:translate(-4px,-2px)}80%{transform:translate(4px,2px)}}
   .fatal-sub{position:absolute;left:0;right:0;bottom:30%;text-align:center;font-family:var(--disp);font-size:14px;letter-spacing:.3em;color:#ff9aa6;text-transform:uppercase}
 
-  /* CRT phosphor themes */
-  :root{ --spark:#2ff3ff; }
-  [data-theme="green"]{
-    --cyan:#3dff9e; --cyan-dim:#1c9960; --pink:#8dffbe; --pink-dim:#3a8a5f;
-    --gold:#c9ff7a; --gold-dim:#7fa93f; --screen:#d6ffe4; --ink:#dcffe9; --muted:#6fae8c; --spark:#3dff9e;
-  }
-  [data-theme="amber"]{
-    --cyan:#ffc24d; --cyan-dim:#a9711f; --pink:#ff9a3c; --pink-dim:#a85f24;
-    --gold:#ffd98a; --gold-dim:#a9791f; --screen:#ffe6b8; --ink:#ffe9cf; --muted:#b58f5a; --spark:#ffb43d;
-  }
   .attract::before,.attract::after{content:"";position:absolute;top:0;bottom:0;width:2px;background:linear-gradient(180deg,transparent,var(--cyan),transparent);opacity:.25}
   .attract::before{left:6px}
   .attract::after{right:6px}
@@ -323,6 +313,40 @@
     body::after{display:none}
     #bezel::before{animation:none}
   }
+  /* Dynamic title screen: controlled motion, not visual clutter */
+  #lobby{position:relative;isolation:isolate}
+  #lobby::before,#lobby::after{
+    content:"";position:absolute;z-index:-1;width:5px;height:5px;background:var(--cyan);opacity:.45;
+    box-shadow:58px 34px 0 var(--pink),-72px 96px 0 var(--gold),104px 142px 0 var(--cyan),-118px 174px 0 var(--pink);
+    animation:menuPixels 7s steps(7,end) infinite;
+  }
+  #lobby::before{left:18%;top:8%}
+  #lobby::after{right:20%;bottom:16%;transform:rotate(180deg);animation-delay:-3.5s}
+  @keyframes menuPixels{0%,100%{transform:translateY(0);opacity:.22}50%{transform:translateY(-14px);opacity:.62}}
+  #lobby .attract{position:relative;overflow:hidden;animation:menuFloat 5s ease-in-out infinite}
+  #lobby .attract::after{
+    display:block;content:"";position:absolute;left:-35%;top:0;width:22%;height:100%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent);transform:skewX(-18deg);
+    animation:screenSweep 6s ease-in-out infinite;
+  }
+  @keyframes menuFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+  @keyframes screenSweep{0%,62%{left:-35%}82%,100%{left:125%}}
+  #lobby .title .twist{animation:titleSignal 4.8s steps(1,end) infinite}
+  @keyframes titleSignal{0%,94%,100%{transform:none;filter:none}95%{transform:translateX(2px);filter:brightness(1.25)}96%{transform:translateX(-2px)}97%{transform:none}}
+  .menu-cart{width:56px;height:34px;margin:18px auto -5px;position:relative;background:#151b25;border:1px solid #596275;border-top:2px solid var(--cyan);box-shadow:inset 0 -4px 0 #080b10,0 8px 16px rgba(0,0,0,.28);animation:cartIdle 2.8s ease-in-out infinite}
+  .menu-cart::before{content:"";position:absolute;left:8px;right:8px;top:7px;height:12px;background:#080b11;border-left:2px solid var(--pink)}
+  .menu-cart span{position:absolute;left:12px;right:12px;bottom:3px;height:3px;background:repeating-linear-gradient(90deg,var(--gold) 0 3px,transparent 3px 6px)}
+  .menu-cart b{position:absolute;inset:8px 0 auto;text-align:center;font-family:var(--disp);font-size:5px;color:#cad3df;letter-spacing:.08em}
+  @keyframes cartIdle{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+  .menu-status{display:flex;align-items:center;justify-content:center;gap:10px;margin:17px auto 0;font-family:var(--disp);font-size:7px;letter-spacing:.08em;color:#68758a}
+  .menu-status span{white-space:nowrap}.menu-status b{color:var(--gold);font-size:9px}.menu-status i{width:3px;height:3px;background:var(--edge-lit);transform:rotate(45deg)}
+  .lobby-menu .btn{position:relative;overflow:hidden}
+  .lobby-menu .btn-primary::after{content:"";position:absolute;inset:0 auto 0 -35%;width:20%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);transform:skewX(-18deg);animation:buttonSweep 3.8s ease-in-out infinite}
+  @keyframes buttonSweep{0%,55%{left:-35%}82%,100%{left:125%}}
+  .btn-arrow{display:inline-block;margin-right:8px;animation:startArrow 1.2s steps(2,end) infinite}
+  @keyframes startArrow{50%{transform:translateX(3px)}}
+  @media(prefers-reduced-motion:reduce){#lobby::before,#lobby::after,#lobby .attract,#lobby .attract::after,#lobby .title .twist,.menu-cart,.lobby-menu .btn-primary::after,.btn-arrow{animation:none!important}}
+
   @media(max-width:480px){
     .stage{padding:max(10px,env(safe-area-inset-top)) max(10px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left))}
     .auditorium{padding:14px 8px 10px}
@@ -337,75 +361,284 @@
     .seat{height:46px}
     .answer-line{min-height:46px}
   }
+
+
+  /* =========================================================
+     CONSOLE CARTRIDGE SKIN — Nobody Creative
+     Keeps the original game logic and responsive structure.
+     ========================================================= */
+  :root{
+    --void:#05070b; --void-2:#080b11; --panel:#0b1018; --panel-2:#101722;
+    --edge:#202a39; --edge-lit:#34445a;
+    --cyan:#28ddeb; --cyan-dim:#16818b;
+    --pink:#ff347f; --pink-dim:#9f2050;
+    --gold:#f6b83f; --gold-dim:#91651e;
+    --green:#55d889; --red:#ff5263;
+    --screen:#d9f5f7; --ink:#edf4ff; --muted:#8390a5;
+  }
+  html,body{background:#05070b}
+  body{
+    background:
+      linear-gradient(rgba(40,221,235,.018) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(40,221,235,.018) 1px,transparent 1px),
+      radial-gradient(90% 70% at 50% 0%,#111725 0%,#070a10 52%,#05070b 100%);
+    background-size:28px 28px,28px 28px,auto;
+    background-attachment:fixed;
+  }
+  body::after{
+    background:repeating-linear-gradient(180deg,transparent 0 3px,rgba(0,0,0,.09) 3px 4px);
+    opacity:.28;mix-blend-mode:normal;
+  }
+  #bezel{border:5px solid #121720;border-radius:10px;box-shadow:inset 0 0 45px rgba(0,0,0,.78)}
+  #bezel::before{inset:2px;border-radius:6px;opacity:.35;animation:scan .28s linear infinite}
+  #bezel::after{border-radius:8px;background:radial-gradient(120% 90% at 50% 48%,transparent 72%,rgba(0,0,0,.42) 100%)}
+  .stage{padding:24px}
+  .screen{max-width:650px}
+
+  /* Minimal boot: one animated cartridge and one credit line. */
+  #ident{background:#05070b;gap:22px;overflow:hidden}
+  #ident::before{
+    content:"";position:absolute;width:260px;height:140px;border-radius:50%;
+    background:radial-gradient(ellipse,rgba(40,221,235,.1),transparent 68%);
+    transform:translateY(36px);filter:blur(8px);
+  }
+  #ident .cart{
+    width:112px;height:132px;opacity:0;position:relative;z-index:1;
+    filter:drop-shadow(0 18px 18px rgba(0,0,0,.65));
+    animation:cartridgeBoot 1.15s .08s cubic-bezier(.2,.85,.25,1) both;
+  }
+  #ident .presents{
+    position:relative;z-index:1;font-size:10px;letter-spacing:.28em;color:#c7d0df;
+    opacity:0;animation:creditIn .7s .72s ease both;
+  }
+  #ident .presents::after{
+    content:"";display:block;width:44px;height:2px;margin:16px auto 0;background:var(--gold);
+    box-shadow:0 0 10px rgba(246,184,63,.35);
+  }
+  #ident .studio,#ident .boot{display:none}
+  @keyframes cartridgeBoot{
+    0%{opacity:0;transform:translateY(-54px) scale(.92)}
+    58%{opacity:1;transform:translateY(4px) scale(1)}
+    76%{transform:translateY(-3px)}
+    100%{opacity:1;transform:translateY(0)}
+  }
+  @keyframes creditIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+
+  /* Logo system */
+  .attract{
+    max-width:500px;margin:0 auto;padding:38px 28px 31px;
+    background:linear-gradient(#080c13,#080c13) padding-box,
+      linear-gradient(100deg,var(--cyan) 0 48%,#54607a 49% 51%,var(--pink) 52% 100%) border-box;
+    border:2px solid transparent;
+    clip-path:polygon(6% 0,46% 0,48% 4%,52% 4%,54% 0,94% 0,100% 13%,100% 87%,94% 100%,54% 100%,52% 96%,48% 96%,46% 100%,6% 100%,0 87%,0 13%);
+    box-shadow:0 24px 60px rgba(0,0,0,.35);
+  }
+  .attract::before,.attract::after{display:none}
+  .title{display:flex;flex-direction:column;align-items:center;gap:10px;line-height:1;text-shadow:none}
+  .title .plot{
+    display:block;color:var(--cyan);font-size:clamp(24px,7vw,38px);letter-spacing:.2em;
+    padding-left:.2em;text-shadow:0 0 13px rgba(40,221,235,.22);
+  }
+  .title .twist{
+    display:block;color:var(--pink);font-size:clamp(38px,11vw,68px);letter-spacing:.025em;
+    text-shadow:0 0 15px rgba(255,52,127,.2);
+  }
+  .edition{
+    display:block;width:max-content;margin:22px auto 0;padding:8px 12px 7px;border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);
+    font-size:clamp(8px,2.4vw,11px);letter-spacing:.16em;color:var(--gold);
+  }
+  .insert{display:block;width:max-content;margin:24px auto 0;padding:8px 12px;font-size:10px;color:#dbe5f4;text-shadow:none;animation:softPrompt 2.2s ease-in-out infinite}
+  @keyframes softPrompt{0%,100%{opacity:.58}50%{opacity:1}}
+
+  /* Flat, game-system controls */
+  .menu{gap:10px;max-width:340px;margin-top:24px}
+  .btn{border-radius:4px;padding:15px 20px;box-shadow:none;letter-spacing:.07em}
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--pink);box-shadow:inset 0 -3px 0 rgba(0,0,0,.28);text-shadow:none}
+  .btn-primary:active{box-shadow:inset 0 -1px 0 rgba(0,0,0,.28)}
+  .btn-gold{background:var(--gold);box-shadow:inset 0 -3px 0 rgba(0,0,0,.24)}
+  .btn-gold:active{box-shadow:inset 0 -1px 0 rgba(0,0,0,.24)}
+  .btn-ghost{background:#0a0f17;border:1px solid var(--edge-lit);color:#cdd7e6}
+  .btn-ghost:hover{background:#101823;border-color:var(--cyan);color:var(--cyan)}
+  .foot{color:#566176;margin-top:18px}
+
+  .eyebrow{color:var(--gold);font-size:9px}
+  .head{color:var(--cyan);text-shadow:0 0 12px rgba(40,221,235,.16)}
+  .subhead{color:#aeb9cb}
+  .settings-list{gap:8px}
+  .set-row,details.about-collapse{
+    border:1px solid var(--edge);border-radius:4px;background:#0a0f17;box-shadow:inset 3px 0 0 rgba(40,221,235,.28)
+  }
+  .set-row{padding:15px 17px}
+  .set-name{color:#dce5f4;font-size:10px}
+  .set-sub{color:#7f8ba0}
+  .toggle{border-radius:3px;border:1px solid var(--gold);background:rgba(246,184,63,.08);padding:9px 12px;min-width:90px}
+  summary.about-summary{color:#cdd7e6}
+  .fb-in{border-radius:3px;background:#080c12;border:1px solid var(--edge-lit)}
+  .fb-ticket{border-radius:4px;background:#0a0f17;border:1px solid var(--cyan)}
+
+  /* Game display */
+  .hud{margin-bottom:9px}
+  .hud .now{
+    border-radius:3px;background:#0a0f17;border:1px solid var(--edge);padding:8px 10px;color:var(--gold);letter-spacing:.08em
+  }
+  .hud .meta{color:#8f9bb0;gap:10px}
+  .quit{border-radius:3px;border:1px solid var(--edge);padding:7px 9px;color:#a6afbf}
+  .lives{margin-bottom:8px;font-size:17px}
+  .pips{gap:5px;margin-bottom:10px}
+  .pip{height:5px;border-radius:0;background:#1a2331}
+  .pip.now{background:var(--gold);box-shadow:0 0 7px rgba(246,184,63,.35)}
+  .auditorium{
+    border-radius:5px;padding:29px 15px 14px;background:#080c12;border:1px solid #263142;
+    box-shadow:inset 0 0 0 4px #0d131d,0 20px 55px rgba(0,0,0,.34);position:relative
+  }
+  .auditorium::before{
+    content:"GAME DISPLAY";position:absolute;top:10px;left:15px;font-family:var(--disp);font-size:7px;letter-spacing:.2em;color:#526076
+  }
+  .auditorium::after{
+    content:"●  ●";position:absolute;top:7px;right:15px;font-family:monospace;font-size:12px;letter-spacing:4px;color:var(--cyan);
+    text-shadow:18px 0 0 var(--pink);opacity:.8
+  }
+  .movie-screen{
+    height:190px;margin:0 5px;background:#030609;border:1px solid #324156;border-radius:2px;
+    box-shadow:inset 0 0 42px rgba(40,221,235,.035),0 0 0 4px #0c121a;padding:25px 21px 20px
+  }
+  .movie-screen::before{opacity:.42}
+  .movie-screen .cart-lbl{
+    top:9px;left:auto;right:10px;padding:4px 6px;background:#0a1018;border-left:2px solid var(--gold);color:#758399;font-size:7px
+  }
+  .movie-screen .clue{font-size:42px;color:var(--screen);text-shadow:0 0 10px rgba(217,245,247,.16)}
+  .movie-screen.correct{border-color:var(--green);box-shadow:inset 0 0 42px rgba(85,216,137,.06),0 0 0 4px #0c121a}
+  .movie-screen.boss{border-color:var(--pink);box-shadow:inset 0 0 45px rgba(255,52,127,.07),0 0 0 4px #0c121a}
+  .subtitle{height:43px;color:var(--gold);font-size:20px;margin-top:8px}
+  .subtitle .lbl{color:var(--pink);font-size:8px}
+  .answer-line{
+    border-radius:2px;border:1px solid #34445a;border-left:3px solid var(--cyan);background:#060a10;padding:10px 12px;min-height:50px
+  }
+  .answer-line .caret-lbl{color:#6f7d92}
+  .answer-line .typed{color:var(--cyan)}
+  .actions{gap:6px}
+  .act{border-radius:3px;border:1px solid #2c394c;background:#0b111a;color:#c9d2df;padding:8px 6px}
+  .act:hover{background:#101823}
+  .act .ic{font-size:14px}
+  .seating{padding-top:8px}
+  .seat-row{margin-bottom:6px}
+  .seat{
+    height:48px;border:1px solid #2a3749;border-radius:3px;background:#111824;color:#e3eaf4;
+    box-shadow:inset 0 -3px 0 #080c12;transition:transform .06s,border-color .12s,background .12s
+  }
+  .seat:hover{filter:none;background:#182231;border-color:#42546d}
+  .seat:active,.seat.hit{transform:translateY(1px);box-shadow:inset 0 -1px 0 #080c12;background:#1b2938;border-color:var(--cyan)}
+  .seat.del{background:#312713;border-color:#6d5421;color:var(--gold);box-shadow:inset 0 -3px 0 #171006}
+  .seat.enter{background:#163322;border-color:#2a6843;color:#7ee5a7;box-shadow:inset 0 -3px 0 #08170f}
+  .seat.space{background:#111824}
+
+  /* End states and overlays */
+  #gameover .go,.exit-card{
+    border-radius:5px;background:#090e15;border:1px solid var(--edge-lit);box-shadow:inset 4px 0 0 var(--pink),0 24px 60px rgba(0,0,0,.5)
+  }
+  #gameover .go{border-color:#552634}
+  .go-title{text-shadow:0 0 17px rgba(255,82,99,.28),0 3px 0 #3c0c14}
+  .ticket{border-radius:5px;background:#090e15;border:1px solid var(--cyan);box-shadow:0 20px 50px rgba(0,0,0,.45)}
+  .card-preview{border-radius:5px;box-shadow:0 18px 45px rgba(0,0,0,.5)}
+  .toast{border-radius:3px;background:var(--cyan);box-shadow:0 12px 34px rgba(0,0,0,.4)}
+  .install-bar{border-radius:5px;background:#0a0f17;border:1px solid var(--cyan)}
+  .overlay{background:rgba(2,4,7,.84)}
+
+  @media(max-width:480px){
+    .stage{padding:max(11px,env(safe-area-inset-top)) max(10px,env(safe-area-inset-right)) max(11px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left))}
+    .attract{padding:31px 20px 26px}
+    .auditorium{padding:28px 8px 10px}
+    .movie-screen{height:176px;padding:23px 15px 18px}
+    .seat{height:50px}
+    .hud .meta{gap:7px;font-size:8px}
+    .quit{font-size:8px}
+  }
+  @media(max-height:680px){
+    .movie-screen{height:137px;padding:20px 13px 13px}
+    .subtitle{height:36px}
+    .seat{height:43px}
+    .auditorium{padding-top:27px}
+  }
+
 </style>
 </head>
 <body>
 <div id="bezel" aria-hidden="true"></div>
 
-<div id="ident" role="img" aria-label="_Nobody Studios presents Plot Twisted">
-  <svg class="cart" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <rect x="3" y="3" width="58" height="58" rx="9" fill="#0a0a0a" stroke="#2ff3ff" stroke-width="2.5"/>
-    <rect x="12" y="11" width="40" height="35" rx="4" fill="#242424" stroke="#ff3d9a" stroke-width="2"/>
-    <rect x="18" y="16" width="28" height="16" rx="2" fill="#000" stroke="#ffb43d" stroke-width="1.5"/>
-    <g stroke="#2ff3ff" stroke-width="2.4" fill="none" stroke-linecap="square">
-      <path d="M23 19 V29 M23 19 H28 a3 3 0 0 1 0 6 H23"/><path d="M33 19 H43 M38 19 V29"/></g>
-    <rect x="16" y="49" width="32" height="8" rx="1.5" fill="#facc15"/>
-    <rect x="20" y="51" width="3" height="4" fill="#0a0a0a"/><rect x="26" y="51" width="3" height="4" fill="#0a0a0a"/>
-    <rect x="32" y="51" width="3" height="4" fill="#0a0a0a"/><rect x="38" y="51" width="3" height="4" fill="#0a0a0a"/>
+<div id="ident" role="img" aria-label="Nobody Creative presents Plot Twisted">
+  <svg class="cart" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <linearGradient id="cartBody" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#333947"/><stop offset="1" stop-color="#171b24"/>
+      </linearGradient>
+      <linearGradient id="cartAccent" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#2ff3ff"/><stop offset="1" stop-color="#ff3d9a"/>
+      </linearGradient>
+    </defs>
+    <path d="M17 7h86l10 11v93l-12 12H19L7 111V18z" fill="url(#cartBody)" stroke="#596275" stroke-width="3"/>
+    <path d="M18 8h84" stroke="url(#cartAccent)" stroke-width="4"/>
+    <rect x="26" y="24" width="68" height="70" rx="4" fill="#080b11" stroke="#596275" stroke-width="2"/>
+    <rect x="32" y="31" width="56" height="4" fill="url(#cartAccent)"/>
+    <text x="60" y="55" text-anchor="middle" fill="#2ff3ff" font-family="monospace" font-size="16" font-weight="700">PLOT</text>
+    <text x="60" y="75" text-anchor="middle" fill="#ff3d9a" font-family="monospace" font-size="15" font-weight="700">TWISTED</text>
+    <path d="M45 83h30" stroke="#ffb43d" stroke-width="3"/>
+    <path d="M24 111h72v15H24z" fill="#0b0e14" stroke="#596275" stroke-width="2"/>
+    <g fill="#ffb43d"><rect x="31" y="115" width="6" height="8"/><rect x="42" y="115" width="6" height="8"/><rect x="53" y="115" width="6" height="8"/><rect x="64" y="115" width="6" height="8"/><rect x="75" y="115" width="6" height="8"/></g>
   </svg>
-  <div class="presents">_Nobody Studios presents</div>
-  <div class="studio">PLOT TWISTED</div>
-  <div class="boot">booting cartridge</div>
+  <div class="presents">Nobody Creative Presents</div>
+  <div class="studio" aria-hidden="true">PLOT TWISTED</div>
+  <div class="boot" aria-hidden="true">booting cartridge</div>
 </div>
 
 <div class="stage">
 
   <section class="screen" id="lobby">
     <div class="attract">
-      <h1 class="title">PLOT<br><span class="twist">TWISTED</span></h1>
+      <h1 class="title"><span class="plot">PLOT</span><span class="twist">TWISTED</span></h1>
       <div class="edition">◆ GAMING EDITION ◆</div>
-      <div class="insert" id="insertCoin" onclick="startArcade()">◆ INSERT COIN ◆</div>
+      <div class="menu-cart" aria-hidden="true"><span></span><b>PT-01</b></div>
+      <div class="insert" id="insertCoin" onclick="startArcade()">PRESS START</div>
     </div>
-    <div class="menu">
-      <button class="btn btn-primary" onclick="startArcade()">Arcade Mode</button>
-      <button class="btn btn-ghost" onclick="showScreen('settings')">Settings</button>
+    <div class="menu-status" aria-label="Five stages, three lives, one boss">
+      <span><b>5</b> STAGES</span><i></i><span><b>3</b> LIVES</span><i></i><span><b>1</b> BOSS</span>
     </div>
-    <div class="foot" id="lobbyFoot">© 2026 _Nobody Studios &middot; Insert Coin</div>
+    <div class="menu lobby-menu">
+      <button class="btn btn-primary" onclick="startArcade()"><span class="btn-arrow">▶</span> Start Game</button>
+      <button class="btn btn-ghost" onclick="showScreen('settings')">System Settings</button>
+    </div>
+    <div class="foot" id="lobbyFoot">© 2026 Nobody Creative &middot; Press Start</div>
   </section>
 
   <section class="screen" id="settings">
-    <div class="eyebrow">Options</div>
+    <div class="eyebrow">System</div>
     <h2 class="head">Settings</h2>
-    <p class="subhead">Set the cabinet the way you like it.</p>
+    <p class="subhead">Tune the cartridge before you play.</p>
     <div class="settings-list">
       <div class="set-row">
         <div><div class="set-name">How to Play</div><div class="set-sub">Play a quick practice round</div></div>
         <button class="toggle" onclick="startTutorial()">PLAY</button>
       </div>
       <div class="set-row">
-        <div><div class="set-name">Button Layout</div><div class="set-sub">How the letter buttons are arranged</div></div>
+        <div><div class="set-name">Control Layout</div><div class="set-sub">How the letter buttons are arranged</div></div>
         <button class="toggle" id="setLayout" onclick="toggleLayout()">QWERTY</button>
       </div>
       <div class="set-row">
         <div><div class="set-name">Sound</div><div class="set-sub">Blips, jingles &amp; spoken clues</div></div>
         <button class="toggle" id="setSound" onclick="toggleSound()">ON</button>
       </div>
-      <div class="set-row">
-        <div><div class="set-name">CRT Theme</div><div class="set-sub">Phosphor color of the cabinet</div></div>
-        <button class="toggle" id="setTheme" onclick="toggleTheme()">NEON</button>
-      </div>
     </div>
     
     <details class="about-collapse">
       <summary class="about-summary">About &amp; Support</summary>
       <div class="about-content about">
-        <p>Plot Twisted is a one-person production. I'm Ben — a social media marketer between full-time roles who started building things and accidentally shipped a trivia cabinet.</p>
-        <p>It's free while the arcade's small. If enough players show up, there may be a small credit later to keep the lights on.</p>
+        <p>Plot Twisted is a one-person production. I'm Ben — a social media marketer between full-time roles who started building things and accidentally shipped a browser game.</p>
+        <p>It's free while the player base is small. If enough people show up, there may be a small credit later to keep the cartridge running.</p>
         <div class="about-cta">
           <a class="btn btn-primary" href="https://bencampbell.netlify.app/" target="_blank" rel="noopener noreferrer">See My Work →</a>
           <button class="btn btn-ghost" onclick="showScreen('feedback')">📩 Feedback &amp; Clue Box</button>
         </div>
-        <div class="about-foot">A _Nobody Studios Production</div>
+        <div class="about-foot">A Nobody Creative Game</div>
       </div>
     </details>
 
@@ -438,7 +671,7 @@
       <button class="btn btn-primary" type="submit" style="width:100%;margin-top:16px">Send It In →</button>
     </form>
     <div class="fb-done" id="fbDone" hidden>
-      <div class="fb-ticket"><div class="fb-ticket-h">📩 NOTE RECEIVED</div><p id="fbDoneMsg"></p></div>
+      <div class="fb-ticket"><div class="fb-ticket-h">📩 TRANSMISSION RECEIVED</div><p id="fbDoneMsg"></p></div>
       <button class="btn btn-ghost" onclick="fbReset()" style="width:100%">Submit Another</button>
     </div>
     <div class="back-wrap"><button class="btn btn-ghost" onclick="showScreen('settings')">← Back to Settings</button></div>
@@ -446,7 +679,7 @@
 
   <section class="screen" id="theater">
     <div class="hud">
-      <span class="now" id="hudCat">Now Playing</span>
+      <span class="now" id="hudCat">System Ready</span>
       <div class="meta">
         <span>STAGE <b id="hudQ">1</b>/<b id="hudTotal">5</b></span>
         <span>SCORE <b id="hudScore">0</b></span>
@@ -509,6 +742,7 @@
       <div class="go-stats" id="goStats"></div>
       <div class="menu" style="margin-top:24px">
         <button class="btn btn-primary" onclick="replay()">Retry ▶</button>
+        <button class="btn btn-gold" onclick="showResults()">Score Card</button>
         <button class="btn btn-ghost" onclick="goLobby()">Title</button>
       </div>
     </div>
@@ -518,12 +752,12 @@
 
 <div class="overlay" id="exitOverlay" role="dialog" aria-modal="true" aria-labelledby="exitTitle">
   <div class="exit-card">
-    <div class="em" aria-hidden="true">🚪</div>
-    <h3 id="exitTitle">Quit mid-run?</h3>
-    <p>Your credit's already in the machine — no refunds. Sure you want to bail?</p>
+    <div class="em" aria-hidden="true">⏏</div>
+    <h3 id="exitTitle">Eject cartridge?</h3>
+    <p>Your current run will be lost. Return to the title screen?</p>
     <div class="row">
-      <button class="btn btn-primary" onclick="leaveTheater()">Quit to title</button>
-      <button class="btn btn-ghost" onclick="closeExit()">Keep playing</button>
+      <button class="btn btn-primary" onclick="leaveTheater()">Eject to title</button>
+      <button class="btn btn-ghost" onclick="closeExit()">Resume game</button>
     </div>
   </div>
 </div>
@@ -558,10 +792,7 @@ const FALLBACK = [
 ];
 
 /* ============ SETTINGS ============ */
-const SETTINGS = { layout:'qwerty', sound:true, theme:'neon' };
-const THEMES=['neon','green','amber']; const THEME_LABELS={neon:'NEON',green:'GREEN',amber:'AMBER'};
-function applyTheme(){ const t=SETTINGS.theme||'neon'; if(t==='neon') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme',t); }
-function toggleTheme(){ const i=THEMES.indexOf(SETTINGS.theme||'neon'); SETTINGS.theme=THEMES[(i+1)%THEMES.length]; saveSettings(); applyTheme(); const b=document.getElementById('setTheme'); if(b) b.textContent=THEME_LABELS[SETTINGS.theme]; }
+const SETTINGS = { layout:'qwerty', sound:true };
 const LAYOUTS = { qwerty:["QWERTYUIOP","ASDFGHJKL","ZXCVBNM"], abc:["ABCDEFGHI","JKLMNOPQR","STUVWXYZ"] };
 const LS={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v);}catch(_){return d;}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(_){}}};
 Object.assign(SETTINGS, LS.get('ptg_settings',{}));
@@ -574,7 +805,7 @@ function toggleSound(){ SETTINGS.sound=!SETTINGS.sound; saveSettings(); const b=
 const ROUND_SIZE = 5;
 const LIVES_START = 3;
 const GUESSES_PER = 3;
-const SITE_URL = (location.protocol.indexOf('http')===0) ? (location.origin + location.pathname).replace(/index\.html$/,'') : 'plot-twisted.netlify.app';
+const SITE_URL = (location.protocol.indexOf('http')===0) ? (location.origin + location.pathname).replace(/index\.html$/,'') : 'https://plot-twisted.netlify.app/';
 const S = { catKey:null, catName:"", qs:[], i:0, score:0, correct:0, combo:0, maxCombo:0, lives:LIVES_START, guesses:GUESSES_PER, typed:"", hintUsed:false, locked:false, results:[], eggBusy:false, boss:false };
 
 /* ============ HELPERS ============ */
@@ -592,7 +823,7 @@ function sfxCoin(){ tone(988,0.07,'square',0.05); setTimeout(()=>tone(1319,0.12,
 function buzz(p){ try{ navigator.vibrate&&navigator.vibrate(p); }catch(_){} }
 function buildPips(){ const w=document.getElementById('pips'); if(!w)return; w.innerHTML=S.qs.map(()=>'<span class="pip"></span>').join(''); }
 function renderPips(){ const w=document.getElementById('pips'); if(!w)return; [...w.children].forEach((el,i)=>{ el.className='pip'+(S.results[i]===true?' ok':S.results[i]===false?' miss':'')+(i===S.i?' now':''); }); }
-function applySettingsUI(){ const a=document.getElementById('setLayout'); if(a)a.textContent=SETTINGS.layout==='qwerty'?'QWERTY':'A\u2013Z'; const b=document.getElementById('setSound'); if(b){ b.textContent=SETTINGS.sound?'ON':'OFF'; b.classList.toggle('off',!SETTINGS.sound);} const t=document.getElementById('setTheme'); if(t) t.textContent=THEME_LABELS[SETTINGS.theme||'neon']; }
+function applySettingsUI(){ const a=document.getElementById('setLayout'); if(a)a.textContent=SETTINGS.layout==='qwerty'?'QWERTY':'A\u2013Z'; const b=document.getElementById('setSound'); if(b){ b.textContent=SETTINGS.sound?'ON':'OFF'; b.classList.toggle('off',!SETTINGS.sound);} }
 
 /* ============ NAV ============ */
 function showScreen(id){ document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active')); document.getElementById(id).classList.add('active'); window.scrollTo(0,0); }
@@ -601,23 +832,85 @@ function quitGame(){ document.getElementById('exitOverlay').classList.add('show'
 function closeExit(){ document.getElementById('exitOverlay').classList.remove('show'); }
 function leaveTheater(){ closeExit(); if('speechSynthesis' in window) speechSynthesis.cancel(); goLobby(); }
 
-/* ============ ALL CLUES + ROTATION ============ */
+/* ============ ALL CLUES + BALANCED ROTATION ============ */
 let ALL = FALLBACK.slice();   // inlined deck = offline fallback
+let DECK_SIG = 'fallback';
+
+function deckSignature(deck){
+  let h=2166136261;
+  const src=deck.map(x=>`${x.answer||''}|${x.clue||''}|${x.difficulty||2}`).join('~');
+  for(let i=0;i<src.length;i++){ h^=src.charCodeAt(i); h=Math.imul(h,16777619); }
+  return `${deck.length}-${(h>>>0).toString(36)}`;
+}
+function validClue(x){ return x && typeof x.clue==='string' && typeof x.answer==='string' && x.clue.trim() && x.answer.trim(); }
 async function loadClues(){
-  // If clues.json is deployed alongside, it overrides the inlined fallback.
   try{
     const r=await fetch('clues.json',{cache:'no-store'});
-    if(r.ok){ const d=await r.json(); if(Array.isArray(d)&&d.length){ ALL=d; LS.set('ptg_bag',null); LS.set('ptg_bagcur',0); } }
-  }catch(_){ /* keep inlined fallback */ }
+    if(r.ok){
+      const d=await r.json();
+      if(Array.isArray(d)){
+        const clean=d.filter(validClue);
+        if(clean.length){
+          ALL=clean;
+          DECK_SIG=deckSignature(ALL);
+          LS.set('ptg_decksig',DECK_SIG);
+        }
+      }
+    }
+  }catch(_){ DECK_SIG=deckSignature(ALL); }
 }
 function escHs(s){ return String(s).replace(/[^A-Za-z0-9]/g,'').toUpperCase().slice(0,3)||'AAA'; }
 function onInitials(){ playerInitials=escHs(document.getElementById('initials').value); LS.set('ptg_initials',playerInitials); }
-function dealFive(){
-  let bag=LS.get('ptg_bag',null), cur=LS.get('ptg_bagcur',0);
-  if(!Array.isArray(bag) || bag.length!==ALL.length || cur+ROUND_SIZE>bag.length){ bag=shuffle(ALL.map((_,i)=>i)); cur=0; }
-  const picks=bag.slice(cur,cur+ROUND_SIZE).map(i=>ALL[i]);
-  LS.set('ptg_bag',bag); LS.set('ptg_bagcur',cur+ROUND_SIZE);
+
+function takeFromPool(label,pool,count){
+  if(!pool.length || count<=0) return [];
+  const bagKey=`ptg_bag_${DECK_SIG}_${label}`, curKey=`ptg_cur_${DECK_SIG}_${label}`;
+  let bag=LS.get(bagKey,null), cur=LS.get(curKey,0), picks=[];
+  if(!Array.isArray(bag) || bag.length!==pool.length){
+    bag=shuffle(pool);
+    cur=0;
+  }
+  while(picks.length<count){
+    if(cur>=bag.length){
+      bag=shuffle(pool);
+      cur=0;
+      // Do not repeat a boundary clue inside the same five-question round.
+      for(let i=0;i<Math.min(picks.length,bag.length);i++){
+        if(picks.includes(bag[i])){
+          const j=bag.findIndex((v,k)=>k>i&&!picks.includes(v));
+          if(j>=0) [bag[i],bag[j]]=[bag[j],bag[i]];
+        }
+      }
+    }
+    const take=Math.min(count-picks.length,bag.length-cur);
+    picks.push(...bag.slice(cur,cur+take));
+    cur+=take;
+  }
+  LS.set(bagKey,bag);
+  LS.set(curKey,cur);
   return picks;
+}
+function dealFive(){
+  const byTier={1:[],2:[],3:[]};
+  ALL.forEach((q,i)=>{
+    const d=Number(q.difficulty);
+    byTier[d===1||d===2||d===3?d:2].push(i);
+  });
+  if(byTier[1].length>=3 && byTier[2].length>=1 && byTier[3].length>=1){
+    const regular=[
+      ...takeFromPool('easy',byTier[1],3),
+      ...takeFromPool('medium',byTier[2],1)
+    ];
+    const boss=takeFromPool('hard',byTier[3],1);
+    return [...shuffle(regular),...boss].map(i=>ALL[i]);
+  }
+  if(byTier[1].length>=3 && byTier[2].length>=2){
+    const regular=takeFromPool('easy',byTier[1],3);
+    const medium=takeFromPool('medium',byTier[2],2);
+    return [...shuffle([...regular,medium[0]]),medium[1]].map(i=>ALL[i]);
+  }
+  const allIdx=ALL.map((_,i)=>i);
+  return takeFromPool('all',allIdx,ROUND_SIZE).map(i=>ALL[i]);
 }
 
 /* ============ ROUND ============ */
@@ -628,7 +921,7 @@ function startTutorial(){
   S.catKey='tutorial'; S.catName='How To Play';
   S.qs = [
     {clue:"Welcome to Plot Twisted! Read the twisted line, name the game. E.g. Yellow circle eats dots.", answer:"pac-man", platform:"TUTORIAL 1"},
-    {clue:"Typos and short titles count! Try typing 'final fantasy' here.", answer:"final fantasy vii", platform:"TUTORIAL 2"}
+    {clue:"Numbers and punctuation are optional. Try typing 'final fantasy' here.", answer:"final fantasy vii", aliases:["final fantasy","ff","final fantasy 7","ff7"], platform:"TUTORIAL 2"}
   ];
   S.i=0; S.score=0; S.correct=0; S.combo=0; S.maxCombo=0; S.lives=99; S.results=new Array(2).fill(null);
   document.getElementById('hudTotal').textContent=2;
@@ -638,7 +931,7 @@ function startTutorial(){
 function startArcade(){
   if(!ALL.length){ toast("No clues loaded"); return; }
   sfxCoin();
-  S.catKey='arcade'; S.catName='Arcade';
+  S.catKey='arcade'; S.catName='Standard Run';
   S.qs = dealFive();
   S.i=0; S.score=0; S.correct=0; S.combo=0; S.maxCombo=0; S.lives=LIVES_START; S.results=new Array(S.qs.length).fill(null);
   document.getElementById('hudTotal').textContent=S.qs.length;
@@ -712,7 +1005,7 @@ function loadQuestion(){
     sub.innerHTML='<span class="lbl">\u26a0 BOSS</span>Final stage \u2014 clear it for double points!';
   }
   else if(S.combo>=2){ now.textContent='COMBO x'+S.combo; now.classList.add('combo'); }
-  else { now.textContent= S.catKey==='tutorial' ? 'HOW TO PLAY' : 'PLOT TWISTED'; }
+  else { now.textContent= S.catKey==='tutorial' ? 'HOW TO PLAY' : 'SYSTEM READY'; }
   document.getElementById('hudQ').textContent=S.i+1;
   document.getElementById('hudScore').textContent=S.score;
   if(S.boss) sfxBoss();
@@ -726,7 +1019,7 @@ function buildSeats(){
   const wrap=document.getElementById('seating');
   const rows=LAYOUTS[SETTINGS.layout].map(r=>r.split(""));
   let html="";
-  rows.forEach(row=>{ html+='<div class="seat-row">'+row.map(l=>'<button class="seat" data-key="'+l+'" aria-label="Letter '+l+'">'+l+'</button>').join("")+'</div>'; });
+  rows.forEach(row=>{ html+='<div class="seat-row">'+row.map(l=>'<button class="seat" data-key="'+l+'" aria-label="Key '+l+'">'+l+'</button>').join("")+'</div>'; });
   html+='<div class="seat-row actions-row"><button class="seat wide space" data-key=" " aria-label="Space">SPACE</button><button class="seat wide del" data-key="Backspace" aria-label="Delete">\u232b</button><button class="seat wide enter" data-key="Enter" aria-label="Submit">\u21b5 OK</button></div>';
   wrap.innerHTML=html;
   seatMap={}; wrap.querySelectorAll('.seat').forEach(el=>{ seatMap[el.dataset.key]=el; });
@@ -746,7 +1039,7 @@ function fitClue(){
   while((el.scrollHeight>maxH || el.scrollWidth>maxW) && size>15 && guard<40){ size-=1.5; el.style.fontSize=size+'px'; guard++; }
 }
 
-/* ============ MATCHING (fuzzy, sequel-aware) ============ */
+/* ============ MATCHING (recognition-first, typo-friendly) ============ */
 function editDistance(a,b){
   const m=a.length,n=b.length; if(!m)return n; if(!n)return m;
   let prev=Array.from({length:n+1},(_,j)=>j), curr=new Array(n+1).fill(0);
@@ -762,30 +1055,81 @@ function variants(t){
 }
 function words(t){ return t.toLowerCase().replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim(); }
 function baseTitle(w){ let s=w,p; do{ p=s; s=s.replace(/\s+(part|volume|vol|chapter|episode|ch|pt)\s+(\d+|[ivxlc]+)$/,'').trim(); s=s.replace(/\s+\d+$/,'').trim(); s=s.replace(/\s+(ii|iii|iv|v|vi|vii|viii|ix|x)$/,'').trim(); }while(s!==p&&s.length>0); return s; }
+
+// These are recognition answers, not formal box-title answers. They only count
+// when that franchise points to one game in the current five-question run.
+const RECOGNITION_RULES=[
+  [/\bsonic\b/,['sonic']], [/legend of zelda|\bzelda\b/,['zelda','legend of zelda']],
+  [/mario kart/,['mario kart']], [/super mario|mario bros/,['mario','super mario']],
+  [/super smash bros/,['smash','smash bros','super smash bros']], [/\bpokemon\b/,['pokemon']],
+  [/animal crossing/,['animal crossing']], [/luigi'?s mansion/,['luigi','luigis mansion']],
+  [/\bhalo\b/,['halo']], [/gears of war/,['gears','gears of war']],
+  [/mass effect/,['mass effect']], [/forza/,['forza']], [/resident evil/,['resident evil','re']],
+  [/final fantasy/,['final fantasy','ff']], [/kingdom hearts/,['kingdom hearts','kh']],
+  [/metal gear solid/,['metal gear','metal gear solid','mgs']], [/god of war/,['god of war','gow']],
+  [/call of duty/,['call of duty','cod']], [/grand theft auto/,['grand theft auto','gta']],
+  [/red dead redemption/,['red dead','red dead redemption','rdr']], [/assassin'?s creed/,['assassins creed','ac']],
+  [/tomb raider/,['tomb raider']], [/uncharted/,['uncharted']], [/spider[- ]?man/,['spiderman','spider man']],
+  [/batman.*arkham/,['batman','arkham']], [/dark souls/,['dark souls']], [/\bdiablo\b/,['diablo']],
+  [/world of warcraft/,['world of warcraft','wow']], [/street fighter/,['street fighter']],
+  [/mortal kombat/,['mortal kombat','mk']], [/tekken/,['tekken']], [/doom/,['doom']],
+  [/half[- ]?life/,['half life']], [/counter[- ]?strike/,['counter strike','cs']],
+  [/the sims|\bsims\b/,['sims','the sims']], [/civilization/,['civilization','civ']],
+  [/five nights at freddy'?s/,['five nights at freddys','fnaf']], [/the last of us/,['last of us','the last of us']],
+  [/horizon (zero dawn|forbidden west)/,['horizon']], [/splatoon/,['splatoon']],
+  [/metroid/,['metroid']], [/kirby/,['kirby']], [/fire emblem/,['fire emblem']],
+  [/persona/,['persona']], [/tony hawk/,['tony hawk']], [/guitar hero/,['guitar hero']],
+  [/rock band/,['rock band']], [/dragon age/,['dragon age']], [/fallout/,['fallout']],
+  [/the elder scrolls|\bskyrim\b|\boblivion\b/,['elder scrolls','the elder scrolls']],
+  [/battlefield/,['battlefield']], [/destiny/,['destiny']], [/overwatch/,['overwatch']],
+  [/portal/,['portal']], [/left 4 dead/,['left 4 dead','left four dead']], [/bioshock/,['bioshock']],
+  [/borderlands/,['borderlands']], [/far cry/,['far cry']], [/crash bandicoot/,['crash','crash bandicoot']],
+  [/spyro/,['spyro']], [/ratchet.*clank/,['ratchet and clank','ratchet clank']], [/pac[- ]?man/,['pacman','pac man']]
+];
+function recognitionAliases(q){
+  const title=words(q.answer||''); const set=new Set();
+  RECOGNITION_RULES.forEach(([rx,list])=>{ if(rx.test(title)) list.forEach(x=>variants(x).forEach(v=>set.add(v))); });
+  // A complete title before a colon is also a natural spoken answer.
+  const colon=String(q.answer||'').split(':')[0].trim();
+  if(colon && colon!==q.answer && colon.length>=4) variants(colon).forEach(v=>set.add(v));
+  return [...set];
+}
 function buildPool(q){
-  const out=new Set(); const title=q.answer;
-  variants(title).forEach(v=>out.add(v));
-  variants(baseTitle(words(title))).forEach(v=>out.add(v));
-  const seg=title.split(/[:(]/)[0].trim();
-  if(seg && seg.length>3 && seg!==title) variants(seg).forEach(v=>out.add(v));
+  const out=new Set();
+  [q.answer,...(Array.isArray(q.aliases)?q.aliases:[])].forEach(title=>{
+    const raw=String(title||'');
+    variants(raw).forEach(v=>out.add(v));
+    // Number keys are intentionally absent. Trailing sequel numbers are optional.
+    const base=baseTitle(words(raw));
+    if(base && base.length>=2) variants(base).forEach(v=>out.add(v));
+  });
   return [...out];
 }
-function isMatch(guess,pool){
-  const gv=[guess]; const gs=stripArticle(guess); if(gs!==guess&&gs.length>2) gv.push(gs);
-  for(const p of pool){ for(const g of gv){
-    if(g===p) return true;
-    const len=Math.max(g.length,p.length);
-    if(len<4) continue;
-    const tol=len<=8?1:2;
-    if(Math.abs(g.length-p.length)<=tol && editDistance(g,p)<=tol) return true;
-  }}
-  return false;
+function closeEnough(g,p){
+  if(g===p) return true;
+  const len=Math.max(g.length,p.length); if(len<4) return false;
+  const tol=len<=6?1:len<=12?2:3;
+  return Math.abs(g.length-p.length)<=tol && editDistance(g,p)<=tol;
 }
-function isPrefixMatch(g,a){ if(g.length<5) return false; if(g===a) return true; if(a.startsWith(g+' ')) return true; const b=baseTitle(a); if(b.length>=5 && (g===b || b.startsWith(g+' '))) return true; return false; }
+function isRecognitionMatch(guess,q){
+  const mine=recognitionAliases(q);
+  if(!mine.some(a=>closeEnough(guess,a))) return false;
+  let matches=0;
+  for(const candidate of S.qs){
+    if(recognitionAliases(candidate).some(a=>closeEnough(guess,a))) matches++;
+  }
+  return matches===1;
+}
+function isMatch(guess,q){
+  const gv=[guess]; const gs=stripArticle(guess); if(gs!==guess&&gs.length>2) gv.push(gs);
+  const pool=buildPool(q);
+  for(const p of pool) for(const g of gv) if(closeEnough(g,p)) return true;
+  return gv.some(g=>isRecognitionMatch(g,q));
+}
 
 /* ============ ANSWER FLOW ============ */
 function submitAnswer(){ if(S.locked)return; const raw=S.typed.trim(); const g=norm(raw); if(!g){bump();return;} const q=S.qs[S.i];
-  const correct = isMatch(g,buildPool(q)) || isPrefixMatch(words(raw),words(q.answer));
+  const correct = isMatch(g,q);
   const titleN=norm(q.answer);
   if(!correct){ if((g==='matrix'||g==='thematrix')&&!titleN.includes('matrix')){ eggMatrix(); return; } if(g==='mortalkombat'&&!titleN.includes('mortalkombat')){ eggFatality(); return; } }
   if(correct) win(q); else wrong(); }
@@ -936,33 +1280,46 @@ async function buildCardCanvas(){
   if(document.fonts){ try{ await document.fonts.load('74px "Press Start 2P"'); await document.fonts.load('26px "Press Start 2P"'); await document.fonts.load('40px "VT323"'); await document.fonts.ready; }catch(_){} }
   const W=1080,H=1350,cx=W/2,r=rankFor(S.correct);
   const c=document.createElement('canvas'); c.width=W; c.height=H; const x=c.getContext('2d');
-  const g=x.createLinearGradient(0,0,0,H); g.addColorStop(0,'#1a0a2e'); g.addColorStop(.5,'#0e0818'); g.addColorStop(1,'#07040c');
-  x.fillStyle=g; x.fillRect(0,0,W,H);
-  x.strokeStyle='#2ff3ff'; x.lineWidth=8; roundRect(x,40,40,W-80,H-80,26); x.stroke();
+  x.fillStyle='#05070b'; x.fillRect(0,0,W,H);
+  // Subtle console grid.
+  x.strokeStyle='rgba(40,221,235,.035)'; x.lineWidth=1;
+  for(let i=0;i<W;i+=36){ x.beginPath(); x.moveTo(i,0); x.lineTo(i,H); x.stroke(); }
+  for(let i=0;i<H;i+=36){ x.beginPath(); x.moveTo(0,i); x.lineTo(W,i); x.stroke(); }
+  // Cartridge-like outer shell.
+  x.fillStyle='#0a0f17'; roundRect(x,42,42,W-84,H-84,12); x.fill();
+  x.strokeStyle='#2c394c'; x.lineWidth=6; roundRect(x,42,42,W-84,H-84,12); x.stroke();
+  x.fillStyle='#28ddeb'; x.fillRect(42,42,(W-84)/2,7);
+  x.fillStyle='#ff347f'; x.fillRect(cx,42,(W-84)/2,7);
   x.textAlign='center';
-  x.fillStyle='#ffb43d'; x.font='26px "Press Start 2P",monospace'; x.fillText('\u25c6  PLOT TWISTED  \u25c6', cx,144);
-  x.save(); x.shadowColor='rgba(255,61,154,.7)'; x.shadowBlur=34; x.fillStyle='#ff3d9a'; x.font='72px "Press Start 2P",monospace'; x.fillText('GAMING', cx,250); x.fillText('EDITION', cx,344); x.restore();
-  // player tag (own band, above the panel — no overlap)
-  x.fillStyle='#9a8bc0'; x.font='20px "Press Start 2P",monospace'; x.fillText('PLAYER', cx,404);
-  x.save(); x.shadowColor='rgba(255,180,61,.5)'; x.shadowBlur=14; x.fillStyle='#ffb43d'; x.font='40px "Press Start 2P",monospace'; x.fillText((playerInitials||'AAA'), cx,452); x.restore();
-  // score panel
-  const px=110,pw=W-220,py=486,ph=430;
-  const sg=x.createLinearGradient(0,py,0,py+ph); sg.addColorStop(0,'#081018'); sg.addColorStop(1,'#04070b');
-  x.fillStyle=sg; roundRect(x,px,py,pw,ph,18); x.fill();
-  x.strokeStyle='#2c3f4a'; x.lineWidth=3; roundRect(x,px,py,pw,ph,18); x.stroke();
-  x.fillStyle='#2ff3ff'; x.save(); x.shadowColor='rgba(47,243,255,.4)'; x.shadowBlur=30; x.font='150px "Press Start 2P",monospace'; x.fillText(String(S.score), cx,py+180); x.restore();
-  x.fillStyle='#9a8bc0'; x.font='24px "Press Start 2P",monospace'; x.fillText('FINAL SCORE', cx,py+236);
-  x.fillStyle='#ffb43d'; x.font='70px "Press Start 2P",monospace'; x.fillText(r.rank+' RANK', cx,py+340);
-  x.fillStyle='#ff3d9a'; x.font='26px "Press Start 2P",monospace'; x.fillText(r.crit.toUpperCase()+'  \u00b7  '+S.correct+'/'+S.qs.length, cx,py+392);
-  // markers
-  const n=S.results.length||5,sw=120,gap=18,tot=n*sw+(n-1)*gap,sx=cx-tot/2,sy=978;
-  for(let i=0;i<n;i++){ const bx=sx+i*(sw+gap),res=S.results[i];
-    x.fillStyle = res===true?'#5ee08a':res===false?'#ff4d5e':'#3a2150';
-    roundRect(x,bx,sy,sw,26,8); x.fill(); }
-  x.fillStyle='#c9b6ee'; x.font='38px "VT323",monospace'; x.fillText('Name the game from one twisted line.', cx,1118);
-  x.fillStyle='#ffb43d'; x.font='22px "Press Start 2P",monospace'; x.fillText('TRUST NOBODY', cx,1208);
-  x.fillStyle='#6b5a8a'; x.font='16px "Press Start 2P",monospace'; x.fillText('A _NOBODY STUDIOS PRODUCTION', cx,1256);
-  x.fillStyle='#6b5a8a'; x.font='28px "VT323",monospace'; x.fillText('bencampbell.netlify.app', cx,1298);
+  x.save(); x.shadowColor='rgba(40,221,235,.22)'; x.shadowBlur=18;
+  x.fillStyle='#28ddeb'; x.font='42px "Press Start 2P",monospace'; x.fillText('PLOT',cx,150); x.restore();
+  x.save(); x.shadowColor='rgba(255,52,127,.22)'; x.shadowBlur=18;
+  x.fillStyle='#ff347f'; x.font='76px "Press Start 2P",monospace'; x.fillText('TWISTED',cx,250); x.restore();
+  x.strokeStyle='#f6b83f'; x.lineWidth=3; x.beginPath(); x.moveTo(320,294); x.lineTo(760,294); x.stroke();
+  x.fillStyle='#f6b83f'; x.font='21px "Press Start 2P",monospace'; x.fillText('GAMING EDITION',cx,335);
+  x.fillStyle='#758399'; x.font='18px "Press Start 2P",monospace'; x.fillText('PLAYER',cx,404);
+  x.fillStyle='#edf4ff'; x.font='38px "Press Start 2P",monospace'; x.fillText((playerInitials||'AAA'),cx,454);
+  const px=105,pw=W-210,py=500,ph=405;
+  x.fillStyle='#030609'; roundRect(x,px,py,pw,ph,5); x.fill();
+  x.strokeStyle='#34445a'; x.lineWidth=3; roundRect(x,px,py,pw,ph,5); x.stroke();
+  x.fillStyle='#526076'; x.font='16px "Press Start 2P",monospace'; x.fillText('FINAL SCORE',cx,566);
+  x.save(); x.shadowColor='rgba(40,221,235,.22)'; x.shadowBlur=20;
+  x.fillStyle='#28ddeb'; x.font='142px "Press Start 2P",monospace'; x.fillText(String(S.score),cx,730); x.restore();
+  x.fillStyle='#f6b83f'; x.font='62px "Press Start 2P",monospace'; x.fillText(r.rank+' RANK',cx,832);
+  x.fillStyle='#ff347f'; x.font='23px "Press Start 2P",monospace'; x.fillText(r.crit.toUpperCase()+'  ·  '+S.correct+'/'+S.qs.length,cx,878);
+  const n=S.results.length||5,sw=118,gap=17,tot=n*sw+(n-1)*gap,sx=cx-tot/2,sy=970;
+  for(let i=0;i<n;i++){
+    const bx=sx+i*(sw+gap),res=S.results[i];
+    x.fillStyle=res===true?'#55d889':res===false?'#ff5263':'#202a39';
+    x.fillRect(bx,sy,sw,14);
+  }
+  x.fillStyle='#b9c4d5'; x.font='37px "VT323",monospace'; x.fillText('Name the game from one twisted line.',cx,1088);
+  x.fillStyle='#f6b83f'; x.font='19px "Press Start 2P",monospace'; x.fillText('TRUST NOBODY',cx,1164);
+  x.fillStyle='#657188'; x.font='15px "Press Start 2P",monospace'; x.fillText('NOBODY CREATIVE PRESENTS',cx,1218);
+  x.fillStyle='#657188'; x.font='27px "VT323",monospace'; x.fillText((location.host||'plot-twisted.netlify.app'),cx,1262);
+  // Gold cartridge contacts.
+  const contactY=1300,contactW=44,contactGap=12,total=7*contactW+6*contactGap,contactX=cx-total/2;
+  for(let i=0;i<7;i++){ x.fillStyle='#a87520'; x.fillRect(contactX+i*(contactW+contactGap),contactY,contactW,18); }
   return c;
 }
 async function showResults(){
@@ -989,7 +1346,7 @@ async function shareCard(){
 }
 function resultText(){
   const r=rankFor(S.correct);
-  const pips=S.results.map(v=>v===true?'\ud83d\udfe9':'\ud83d\udfe5').join('');
+  const pips=S.results.map(v=>v===true?'\ud83d\udfe9':v===false?'\ud83d\udfe5':'\u2b1b').join('');
   return `\ud83d\udd79\ufe0f Plot Twisted: Gaming \u2014 ${S.score} \u00b7 ${r.rank} RANK\n${pips}\n${SITE_URL}`;
 }
 function copyResult(){
@@ -1033,7 +1390,7 @@ function dismissInstall(){ document.getElementById('installBar').classList.remov
 function initInstall(){ if(isStandalone()) return; const ua=navigator.userAgent||''; const iOS=/iphone|ipad|ipod/i.test(ua)&&!/crios|fxios/i.test(ua); if(iOS) setTimeout(()=>maybeShowInstall('ios'),1600); }
 
 /* ============ CHEAT: unlock More Modes ============ */
-function unlockMore(){ if(LS.get('ptg_more_unlocked',false)){ document.getElementById('moreBtn').style.display=''; return; } LS.set('ptg_more_unlocked',true); document.getElementById('moreBtn').style.display=''; toast('\u2726 More Modes Unlocked'); sfxCoin(); }
+function unlockMore(){ const btn=document.getElementById('moreBtn'); if(LS.get('ptg_more_unlocked',false)){ if(btn)btn.style.display=''; return; } LS.set('ptg_more_unlocked',true); if(btn)btn.style.display=''; toast('\u2726 More Modes Unlocked'); sfxCoin(); }
 const KONAMI=['arrowup','arrowup','arrowdown','arrowdown','arrowleft','arrowright','arrowleft','arrowright','b','a'];
 let kseq=[];
 document.addEventListener('keydown',e=>{
@@ -1045,7 +1402,6 @@ let footTaps=0, footTimer=null;
 function footPoke(){ footTaps++; clearTimeout(footTimer); footTimer=setTimeout(()=>footTaps=0,1500); if(footTaps>=6){ footTaps=0; unlockMore(); } }
 
 applySettingsUI();
-applyTheme();
 initInstall();
 loadClues();
 document.getElementById('initials').addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); onInitials(); e.target.blur(); } });
@@ -1063,7 +1419,7 @@ window.addEventListener('load',()=>{
       ident.style.display="none"; 
       goLobby();
     }, reduce?50:700); 
-  }, reduce?400:2400);
+  }, reduce?300:1850);
 });
 </script>
 </body>
