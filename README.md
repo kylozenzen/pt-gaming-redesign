@@ -3,6 +3,9 @@
 Production files:
 - `index.html`
 - `clues.json`
+- `manifest.webmanifest`, `sw.js`, `assets/` (install and offline support; icons are placeholders, and `assets/og-image.png` is still to be added)
+
+Archive: `archive/clues.md` (not served)
 
 Changes:
 - Recognition-first answer matching
@@ -14,4 +17,10 @@ Changes:
 - Main menu gains subtle cartridge motion, pixel activity, status readout, title signal glitch, and animated Start control
 - Compact letter-only keyboard is unchanged
 
-Replace the existing `index.html` and `clues.json` with these files.
+Fixes in this pass:
+- Stage advances cancel when you eject to the title
+- The boss is a hard clue when the deck has no difficulty-3 clues
+- The More Modes cheat only reports an unlock when its button exists
+- Installable shell with offline support; clues refresh network-first
+
+Replace the existing `index.html` and `clues.json` with these files, and add the new files alongside them.

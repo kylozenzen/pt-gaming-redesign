@@ -830,7 +830,7 @@ function showScreen(id){ document.querySelectorAll('.screen').forEach(s=>s.class
 function goLobby(){ showScreen('lobby'); }
 function quitGame(){ document.getElementById('exitOverlay').classList.add('show'); }
 function closeExit(){ document.getElementById('exitOverlay').classList.remove('show'); }
-function leaveTheater(){ closeExit(); if('speechSynthesis' in window) speechSynthesis.cancel(); goLobby(); }
+function leaveTheater(){ closeExit(); clearStageTimers(); if('speechSynthesis' in window) speechSynthesis.cancel(); goLobby(); }
 
 /* ============ ALL CLUES + BALANCED ROTATION ============ */
 let ALL = FALLBACK.slice();   // inlined deck = offline fallback
@@ -905,9 +905,10 @@ function dealFive(){
     return [...shuffle(regular),...boss].map(i=>ALL[i]);
   }
   if(byTier[1].length>=3 && byTier[2].length>=2){
+    // No difficulty-3 clues in the deck: the boss is a hard pick from tier 2 and always comes last.
     const regular=takeFromPool('easy',byTier[1],3);
-    const medium=takeFromPool('medium',byTier[2],2);
-    return [...shuffle([...regular,medium[0]]),medium[1]].map(i=>ALL[i]);
+    const pair=takeFromPool('hard',byTier[2],2);
+    return [...shuffle([...regular,pair[0]]),pair[1]].map(i=>ALL[i]);
   }
   const allIdx=ALL.map((_,i)=>i);
   return takeFromPool('all',allIdx,ROUND_SIZE).map(i=>ALL[i]);
@@ -917,7 +918,7 @@ function dealFive(){
 function shuffle(a){ a=a.slice(); for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]];} return a; }
 
 function startTutorial(){
-  sfxCoin();
+  sfxCoin(); clearStageTimers();
   S.catKey='tutorial'; S.catName='How To Play';
   S.qs = [
     {clue:"Welcome to Plot Twisted! Read the twisted line, name the game. E.g. Yellow circle eats dots.", answer:"pac-man", platform:"TUTORIAL 1"},
@@ -930,7 +931,7 @@ function startTutorial(){
 
 function startArcade(){
   if(!ALL.length){ toast("No clues loaded"); return; }
-  sfxCoin();
+  sfxCoin(); clearStageTimers();
   S.catKey='arcade'; S.catName='Standard Run';
   S.qs = dealFive();
   S.i=0; S.score=0; S.correct=0; S.combo=0; S.maxCombo=0; S.lives=LIVES_START; S.results=new Array(S.qs.length).fill(null);
@@ -1135,6 +1136,10 @@ function submitAnswer(){ if(S.locked)return; const raw=S.typed.trim(); const g=n
   if(correct) win(q); else wrong(); }
 function comboSfx(n){ const base=660+Math.min(n,6)*90; tone(base,0.08,'square',0.05); setTimeout(()=>tone(base*1.33,0.08,'square',0.05),80); setTimeout(()=>tone(base*1.6,0.13,'square',0.05),160); }
 function comboFlash(n){ const aud=document.querySelector('.auditorium'); if(!aud)return; const el=document.createElement('div'); el.className='combo-flash'; el.textContent=n+' HIT COMBO!'; aud.appendChild(el); setTimeout(()=>el.remove(),900); }
+// Stage advances are scheduled through stageLater so leaving the theater can cancel them.
+const stageTimers=new Set();
+function stageLater(fn,ms){ const id=setTimeout(()=>{ stageTimers.delete(id); fn(); },ms); stageTimers.add(id); return id; }
+function clearStageTimers(){ stageTimers.forEach(clearTimeout); stageTimers.clear(); }
 function win(q){
   S.locked=true;
   S.combo++; S.maxCombo=Math.max(S.maxCombo,S.combo);
@@ -1155,12 +1160,12 @@ function win(q){
     ms.innerHTML='<div class="verdict boss">VICTORY!</div>';
     sfxVictory(); flashScreen(); shake();
     fxAt(ms,{count:46,colors:['#ffe07a','#ffb43d','#fff2c0'],speed:5.5,up:2,life:64});
-    setTimeout(next,1500);
+    stageLater(next,1500);
   } else {
     if(S.combo>=2){ comboFlash(S.combo); comboSfx(S.combo); fxAt(ms,{count:30,speed:4.4}); shake(); }
     else { sfxCorrect(); fxAt(ms,{count:16,speed:3.2}); }
     ms.innerHTML='<div class="verdict">STAGE CLEAR!</div>';
-    setTimeout(next,1200);
+    stageLater(next,1200);
   }
 }
 function wrong(){
@@ -1184,8 +1189,8 @@ function failClue(reason){
   sub.innerHTML=`<span class="lbl">${lead}</span>it was ${esc(titleCase(q.answer))}`;
   const ms=document.getElementById('movieScreen'); ms.classList.remove('boss');
   setTimeout(renderLives, 500);
-  if(S.lives<=0 && S.catKey!=='tutorial'){ setTimeout(gameOverFailed,1700); }
-  else { setTimeout(next,1700); }
+  if(S.lives<=0 && S.catKey!=='tutorial'){ stageLater(gameOverFailed,1700); }
+  else { stageLater(next,1700); }
 }
 
 /* ============ EASTER EGGS ============ */
@@ -1390,7 +1395,7 @@ function dismissInstall(){ document.getElementById('installBar').classList.remov
 function initInstall(){ if(isStandalone()) return; const ua=navigator.userAgent||''; const iOS=/iphone|ipad|ipod/i.test(ua)&&!/crios|fxios/i.test(ua); if(iOS) setTimeout(()=>maybeShowInstall('ios'),1600); }
 
 /* ============ CHEAT: unlock More Modes ============ */
-function unlockMore(){ const btn=document.getElementById('moreBtn'); if(LS.get('ptg_more_unlocked',false)){ if(btn)btn.style.display=''; return; } LS.set('ptg_more_unlocked',true); if(btn)btn.style.display=''; toast('\u2726 More Modes Unlocked'); sfxCoin(); }
+function unlockMore(){ const btn=document.getElementById('moreBtn'); if(!btn) return; if(LS.get('ptg_more_unlocked',false)){ btn.style.display=''; return; } LS.set('ptg_more_unlocked',true); btn.style.display=''; toast('\u2726 More Modes Unlocked'); sfxCoin(); }
 const KONAMI=['arrowup','arrowup','arrowdown','arrowdown','arrowleft','arrowright','arrowleft','arrowright','b','a'];
 let kseq=[];
 document.addEventListener('keydown',e=>{
